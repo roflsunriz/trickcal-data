@@ -8,9 +8,9 @@
 - [純粋](junsui.md)
 - [その他](other.md)
 
-# 文字起こし
+## 文字起こし
 - [遺物カード](artifact-cards.md)
 - [スペルカード](spell-cards.md)
 
-# オススメ使徒編成
+## オススメ使徒編成
 - [使徒編成表](apostle-formation-table.md)
