@@ -2,6 +2,10 @@
 
 トリッカルの攻略アセットなど。
 
+## 公開ページ
+
+https://roflsunriz.github.io/trickcal-data/
+
 ## 内容
 
 - `docs/` に各カテゴリの台詞データを配置しています。
