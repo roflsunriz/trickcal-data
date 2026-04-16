@@ -4,6 +4,7 @@ site_url: https://roflsunriz.github.io/trickcal-data/
 
 theme:
   name: material
+  custom_dir: overrides
   language: ja
   logo: assets/logo.svg
   favicon: assets/favicon.svg
@@ -40,6 +41,14 @@ nav:
       - 遺物カード: artifact-cards.md
       - スペルカード: spell-cards.md
   - 使徒編成表: apostle-formation-table.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      locale: ja
+      timezone: Asia/Tokyo
+      fallback_to_build_date: true
 
 extra_css:
   - stylesheets/extra.css
