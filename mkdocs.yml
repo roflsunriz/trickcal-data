@@ -41,6 +41,8 @@ nav:
       - 遺物カード: artifact-cards.md
       - スペルカード: spell-cards.md
   - 使徒編成表: apostle-formation-table.md
+  - 研究室:
+      - 生産ラボ: research.md
 
 plugins:
   - search

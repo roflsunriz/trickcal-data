@@ -14,3 +14,6 @@
 
 ## オススメ使徒編成
 - [使徒編成表](apostle-formation-table.md)
+
+## 研究室
+- [生産ラボ](research.md)
