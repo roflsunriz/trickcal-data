@@ -23,13 +23,32 @@ mkdocs serve
 
 ## ディレクトリ構成
 
-- `docs/index.md` - トップページ
-- `docs/yuuutsu.md` - 憂鬱
-- `docs/kappatsu.md` - 活発
-- `docs/kyouki.md` - 狂気
-- `docs/reisei.md` - 冷静
-- `docs/junsui.md` - 純粋
-- `docs/other.md` - その他
+```text
+.
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # GitHub Pages へのデプロイ設定
+├── docs/
+│   ├── index.md                    # トップページ
+│   ├── yuuutsu.md                  # 緊急！バイオデンジャー1号 攻略: 憂鬱
+│   ├── kappatsu.md                 # 緊急！バイオデンジャー1号 攻略: 活発
+│   ├── kyouki.md                   # 緊急！バイオデンジャー1号 攻略: 狂気
+│   ├── reisei.md                   # 緊急！バイオデンジャー1号 攻略: 冷静
+│   ├── junsui.md                   # 緊急！バイオデンジャー1号 攻略: 純粋
+│   ├── other.md                    # 緊急！バイオデンジャー1号 攻略: その他
+│   ├── artifact-cards.md           # 文字起こし: 遺物カード
+│   ├── spell-cards.md              # 文字起こし: スペルカード
+│   ├── apostle-formation-table.md  # 使徒編成表
+│   ├── research.md                 # 研究室: 生産ラボ
+│   ├── assets/                     # サイト用ロゴ・ファビコン
+│   └── stylesheets/                # 追加 CSS
+├── overrides/
+│   └── partials/                   # MkDocs Material のテンプレート上書き
+├── mkdocs.yml                      # MkDocs 設定
+├── CONTRIBUTING.md                 # 貢献ガイド
+├── LICENSE                         # ライセンス
+└── README.md                       # このファイル
+```
 
 ## ライセンス
 

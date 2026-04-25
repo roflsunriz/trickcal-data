@@ -1,3 +1,9 @@
 /site
 /.temp
 /.tmp
+
+# Claw Code files
+.claw/
+.sandbox-home/
+.sandbox-tmp/
+.clawd-todos.json
