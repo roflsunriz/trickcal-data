@@ -1,5 +1,10 @@
 site_name: トリッカルデータ
-site_description: トリッカルの攻略アセット
+site_description: |-
+  このサイトが含む情報:
+  - トリッカルの緊急！バイオデンジャー1号の攻略情報
+  - トリッカルの文字起こし（遺物カードとスペルカード）
+  - トリッカルのおすすめ使徒編成表
+  - トリッカルの研究室の生産ラボの情報（必要素材数と、第10段階以降の予想）
 site_url: https://roflsunriz.github.io/trickcal-data/
 
 theme:
