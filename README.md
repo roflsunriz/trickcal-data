@@ -16,7 +16,7 @@ https://roflsunriz.github.io/trickcal-data/
 ローカルで確認する場合は、MkDocs を起動してください。
 
 ```bash
-mkdocs serve
+mkdocs serve --livereload --dirty
 ```
 
 ブラウザで表示された URL を開くと、各ページを確認できます。
