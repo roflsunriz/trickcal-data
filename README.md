@@ -39,7 +39,12 @@ mkdocs serve --livereload --dirty
 │   ├── artifact-cards.md           # 文字起こし: 遺物カード
 │   ├── spell-cards.md              # 文字起こし: スペルカード
 │   ├── apostle-formation-table.md  # 使徒編成表
-│   ├── research.md                 # 研究室: 生産ラボ
+│   ├── research-stage-10.md        # 研究室: 生産ラボ 第10段階
+│   ├── research-stage-11.md        # 研究室: 生産ラボ 第11段階（予想）
+│   ├── research-stage-12.md        # 研究室: 生産ラボ 第12段階（予想）
+│   ├── research-stage-13.md        # 研究室: 生産ラボ 第13段階（予想）
+│   ├── research-stage-14.md        # 研究室: 生産ラボ 第14段階（予想）
+│   ├── research-stage-15.md        # 研究室: 生産ラボ 第15段階（予想）
 │   ├── assets/                     # サイト用ロゴ・ファビコン
 │   └── stylesheets/                # 追加 CSS
 ├── overrides/
