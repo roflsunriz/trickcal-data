@@ -62,3 +62,7 @@ mkdocs serve --livereload --dirty
 ## 貢献
 
 誤記修正、データ追加、分類修正の提案は歓迎します。変更を送る前に [CONTRIBUTING.md](CONTRIBUTING.md) を確認してください。
+
+## 依存更新の自動処理
+
+Dependabot は対象の依存関係を毎週確認します。patch／minor 更新は PR のチェック（CI）が成功した後に自動で squash merge されます。CI の失敗ジョブは 1 回だけ再実行します。再失敗した PR は残して手動で修正します。major 更新は手動で確認します。マージ後はデプロイ workflow を明示起動します。
