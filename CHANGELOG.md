@@ -13,5 +13,6 @@
 
 ### Changed
 
+- Pages デプロイの保守性を保つため、利用アクションを最新メジャーへ更新した（checkout v4→v7、setup-python v5→v7、upload-pages-artifact v3→v5、deploy-pages v4→v5）。
 - 依存更新を安全に省力化するため、Dependabot の patch／minor PR を既存 CI の全チェック成功後に自動取り込みし、失敗ジョブを一度再実行する設定を追加した。
 - 作業開始時の共通指針見落としを防ぐため、調査やコマンド実行より前に `COMMON-AGENTS.md` を先頭から末尾まで読み、EOFを確認する必須ゲートを追加した。
