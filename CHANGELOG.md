@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Git の取得履歴が浅いと MkDocs の更新日時プラグインが警告し、strict デプロイが停止するため、Pages の checkout で全履歴を取得するようにした。
+
 ### Changed
 
 - 依存更新を安全に省力化するため、Dependabot の patch／minor PR を既存 CI の全チェック成功後に自動取り込みし、失敗ジョブを一度再実行する設定を追加した。
