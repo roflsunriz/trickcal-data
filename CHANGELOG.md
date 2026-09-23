@@ -8,6 +8,7 @@
 
 ### Fixed
 
+- CI と Dependabot の分類の実行順が前後しても更新を取りこぼさないよう、同じ PR 番号と head SHA を再照合する経路を追加した。
 - Git の取得履歴が浅いと MkDocs の更新日時プラグインが警告し、strict デプロイが停止するため、Pages の checkout で全履歴を取得するようにした。
 
 ### Changed

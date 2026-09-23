@@ -7,3 +7,5 @@
 設定を変えたときは `actionlint .github/workflows/dependabot-automation.yml` と実際の PR の Actions 結果を確認します。問題があれば呼び出し先の共通 workflow SHA を直前の検証済み値へ戻すコミットを push します。取り込まれた依存更新に問題があれば通常の revert コミットで復旧します。
 
 Pages デプロイでは更新日時プラグインのため Git 全履歴が必要です。`.github/workflows/deploy.yml` の checkout は `fetch-depth: 0` を維持し、`mkdocs build --strict` と Pages 実行結果を確認してください。
+
+CI 完了より Dependabot の分類が遅れる場合は、`callback_workflow_file` が指す呼び出し側 workflow を `workflow_dispatch` し、同じ PR 番号・head SHA・全チェックを再確認する。呼び出し側のファイル名を変える際はこの入力も一緒に更新する。
