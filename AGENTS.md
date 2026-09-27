@@ -18,6 +18,6 @@ Get-Content -Raw -LiteralPath .\COMMON-AGENTS.md
 - 作業前にこのリポジトリの `README.md`、設定ファイル、CI 定義を確認する。
 - 追加のプロジェクト固有ルールが必要になった場合は、このファイルに追記する。
 
-## MkDocs デプロイの前提（2026-09-23）
+## 文書デプロイの前提（2026-09-27）
 
-- `.github/workflows/deploy.yml` は `mkdocs-git-revision-date-localized-plugin` を strict モードで使う。浅い checkout では Git 更新日時の警告でビルドが失敗するため、`fetch-depth: 0` を維持する。初回失敗の根拠は `verification.md` を参照する。
+- `.github/workflows/deploy.yml` は `scripts/build-docs.py` で Git 更新日時を各ページのメタデータへ付けてから Zensical の strict ビルドを行う。浅い checkout では正しい更新日時を得られないため、`fetch-depth: 0` を維持する。移行前の失敗の根拠は `verification.md` を参照する。

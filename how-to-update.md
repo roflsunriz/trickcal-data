@@ -1,11 +1,15 @@
 # 更新手順
 
+## 文書サイトの更新
+
+`docs/` を編集したら、`python -m pip install -r requirements.txt` と `python scripts/build-docs.py` を実行し、`site/` のページと最終更新日を確認する。公開に問題が出た場合は変更コミットを revert し、Pages ワークフローを再実行する。
+
 ## Dependabot PR の更新
 
 前提は `.github/dependabot.yml` と PR 用 CI（CI）です。更新 PR の head SHA と `gh pr checks <PR番号>` の結果を確認してください。patch／minor は全チェック成功後に自動取り込みされます。初回 CI 失敗は failed jobs のみを 1 回再実行し、再失敗した PR は残して手動で修正します。
 
 設定を変えたときは `actionlint .github/workflows/dependabot-automation.yml` と実際の PR の Actions 結果を確認します。問題があれば呼び出し先の共通 workflow SHA を直前の検証済み値へ戻すコミットを push します。取り込まれた依存更新に問題があれば通常の revert コミットで復旧します。
 
-Pages デプロイでは更新日時プラグインのため Git 全履歴が必要です。`.github/workflows/deploy.yml` の checkout は `fetch-depth: 0` を維持し、`mkdocs build --strict` と Pages 実行結果を確認してください。
+Pages デプロイでは各ページの更新日時を Git 履歴から算出します。`.github/workflows/deploy.yml` の checkout は `fetch-depth: 0` を維持し、`python scripts/build-docs.py` と Pages 実行結果を確認してください。
 
 CI 完了より Dependabot の分類が遅れる場合は、`callback_workflow_file` が指す呼び出し側 workflow を `workflow_dispatch` し、同じ PR 番号・head SHA・全チェックを再確認する。呼び出し側のファイル名を変える際はこの入力も一緒に更新する。

@@ -6,6 +6,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- 各ページの Git 最終更新日とサイト外観を維持して公開できるよう、MkDocs Material から Zensical の classic テーマへ移行した。
+
 ### Fixed
 
 - CI と Dependabot の分類の実行順が前後しても更新を取りこぼさないよう、同じ PR 番号と head SHA を再照合する経路を追加した。

@@ -9,6 +9,7 @@ site_url: https://roflsunriz.github.io/trickcal-data/
 
 theme:
   name: material
+  variant: classic
   custom_dir: overrides
   language: ja
   logo: assets/logo.svg
@@ -56,12 +57,6 @@ nav:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: date
-      locale: ja
-      timezone: Asia/Tokyo
-      fallback_to_build_date: true
-      enable_parallel_processing: false
 
 extra_css:
   - stylesheets/extra.css

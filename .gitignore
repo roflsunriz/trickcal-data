@@ -8,5 +8,7 @@
 .sandbox-tmp/
 .clawd-todos.json
 COMMON-AGENTS.md
+.zensical-build.yml
+zensical-docs-*/
 
 COMMON-AGENTS.md

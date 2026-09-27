@@ -24,6 +24,6 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install documentation dependencies
-        run: python -m pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
+        run: python -m pip install -r requirements.txt
       - name: Build documentation
-        run: mkdocs build --strict
+        run: python scripts/build-docs.py

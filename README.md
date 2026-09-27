@@ -9,17 +9,20 @@ https://roflsunriz.github.io/trickcal-data/
 ## 内容
 
 - `docs/` に各カテゴリの台詞データを配置しています。
-- `mkdocs.yml` で MkDocs Material のサイトとして閲覧できます。
+- `mkdocs.yml` を Zensical で読み込み、Material と同じ classic 外観で閲覧できます。
 
 ## 閲覧方法
 
-ローカルで確認する場合は、MkDocs を起動してください。
+ローカルで確認する場合は、依存関係を入れて Zensical を起動してください。
 
 ```bash
-mkdocs serve --livereload --dirty
+python -m pip install -r requirements.txt
+zensical serve
 ```
 
 ブラウザで表示された URL を開くと、各ページを確認できます。
+
+公開用の厳格ビルドと各ページの Git 最終更新日の確認には `python scripts/build-docs.py` を実行します。
 
 ## ディレクトリ構成
 
@@ -48,8 +51,9 @@ mkdocs serve --livereload --dirty
 │   ├── assets/                     # サイト用ロゴ・ファビコン
 │   └── stylesheets/                # 追加 CSS
 ├── overrides/
-│   └── partials/                   # MkDocs Material のテンプレート上書き
-├── mkdocs.yml                      # MkDocs 設定
+│   └── partials/                   # Zensical のテンプレート上書き
+├── mkdocs.yml                      # Zensical 設定
+├── requirements.txt                # サイトの依存関係
 ├── CONTRIBUTING.md                 # 貢献ガイド
 ├── LICENSE                         # ライセンス
 └── README.md                       # このファイル
