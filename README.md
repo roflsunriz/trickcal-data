@@ -1,6 +1,6 @@
 # トリッカルデータ
 
-トリッカルの攻略アセットなど。
+トリッカルの攻略資料、台詞やカードの文字起こしをまとめています。
 
 ## 公開ページ
 
@@ -20,7 +20,7 @@ python -m pip install -r requirements.txt
 zensical serve
 ```
 
-ブラウザで表示された URL を開くと、各ページを確認できます。
+Zensicalが表示した URL をブラウザで開くと、各ページを確認できます。
 
 公開用の厳格ビルドと各ページの Git 最終更新日の確認には `python scripts/build-docs.py` を実行します。
 
