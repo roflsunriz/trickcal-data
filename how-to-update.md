@@ -1,5 +1,8 @@
 # 更新手順
 
+作業前に [findings.md](findings.md) を全文読み、固有の環境・ツール・例外条件を確認する。以下は更新と復旧の手順の正本とする。
+
+
 ## 文書サイトの更新
 
 `docs/` を編集したら、`python -m pip install -r requirements.txt` と `python scripts/build-docs.py` を実行し、`site/` のページと最終更新日を確認する。公開に問題が出た場合は変更コミットを revert し、Pages ワークフローを再実行する。

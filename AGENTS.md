@@ -16,8 +16,9 @@ Get-Content -Raw -LiteralPath .\COMMON-AGENTS.md
 ## プロジェクト固有情報
 
 - 作業前にこのリポジトリの `README.md`、設定ファイル、CI 定義を確認する。
-- 追加のプロジェクト固有ルールが必要になった場合は、このファイルに追記する。
+- プロジェクト固有の実現手段・例外・調査知見は `findings.md` に追記・更新する。
 
-## 文書デプロイの前提（2026-09-27）
 
-- `.github/workflows/deploy.yml` は `scripts/build-docs.py` で Git 更新日時を各ページのメタデータへ付けてから Zensical の strict ビルドを行う。浅い checkout では正しい更新日時を得られないため、`fetch-depth: 0` を維持する。移行前の失敗の根拠は `verification.md` を参照する。
+## プロジェクト固有の知見
+
+共通指針の読了後、調査・計画・編集・検証・コミット・プッシュの前に、[findings.md](findings.md) を先頭から末尾まで全文読む。固有の実現手段、例外の条件と代替検証、調査知見は同ファイルを正本とし、根拠を確認した時点で随時更新する。
