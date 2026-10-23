@@ -19,6 +19,10 @@ assert.match(uiSource, /function itemLabel/);
 assert.match(uiSource, /最終成果物の必要クラフト数/);
 assert.match(uiSource, /中間生成物の必要クラフト数/);
 assert.match(uiSource, /planRows\(core\.INTERMEDIATE_ITEMS\)/);
+assert.match(uiSource, /details\.addEventListener\("toggle"/);
+assert.match(uiSource, /sections: state\.sections/);
+assert.doesNotMatch(uiSource, /第(?:10|11|12)段階を設定/);
+assert.doesNotMatch(uiSource, /dataset\.preset/);
 const context = {};
 runInNewContext(source, context, { filename: "research-calculator-core.js" });
 const calculator = context.TrickcalResearchCalculator;
@@ -133,13 +137,33 @@ const normalized = calculator.normalizeSavedState({
   selectedPreset: 11,
   targets: { 感性コア: 42 },
   stock: { MUSIMチップ: 7, サラサラの鉄粉: 99 },
+  sections: { final: false, intermediate: true, raw: false },
 });
+assert.equal(calculator.STORAGE_VERSION, 2);
 assert.equal(normalized.selectedPreset, 11);
 assert.equal(normalized.targets.感性コア, 42);
 assert.equal(normalized.targets.金の匙, 0);
 assert.equal(normalized.stock.MUSIMチップ, 7);
 assert.equal(normalized.stock.サラサラの鉄粉, 99);
 assert.equal(normalized.stock.金の匙, 0);
+assert.deepEqual(
+  { ...normalized.sections },
+  { final: false, intermediate: true, raw: false },
+);
+
+const migrated = calculator.normalizeSavedState({
+  version: 1,
+  selectedPreset: 12,
+  targets: { 感性コア: 165 },
+  stock: { MUSIMチップ: 7 },
+});
+assert.equal(migrated.version, calculator.STORAGE_VERSION);
+assert.equal(migrated.targets.感性コア, 165);
+assert.equal(migrated.stock.MUSIMチップ, 7);
+assert.deepEqual(
+  { ...migrated.sections },
+  { final: true, intermediate: false, raw: true },
+);
 assert.equal(
   calculator.normalizeSavedState({
     version: calculator.STORAGE_VERSION + 1,
@@ -155,6 +179,7 @@ assert.equal(
     selectedPreset: 99,
     targets: {},
     stock: {},
+    sections: { final: true, intermediate: false, raw: true },
   }),
   null,
 );
@@ -164,6 +189,17 @@ assert.equal(
     selectedPreset: null,
     targets: { 感性コア: -1 },
     stock: {},
+    sections: { final: true, intermediate: false, raw: true },
+  }),
+  null,
+);
+assert.equal(
+  calculator.normalizeSavedState({
+    version: calculator.STORAGE_VERSION,
+    selectedPreset: 11,
+    targets: {},
+    stock: {},
+    sections: { final: true, intermediate: "open", raw: true },
   }),
   null,
 );

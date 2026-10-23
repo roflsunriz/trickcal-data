@@ -24,7 +24,12 @@
     "曲がったもの",
     "やわらか粘土",
   ];
-  const STORAGE_VERSION = 1;
+  const STORAGE_VERSION = 2;
+  const SECTION_DEFAULTS = Object.freeze({
+    final: true,
+    intermediate: false,
+    raw: true,
+  });
   const PRESET_STAGES = [10, 11, 12];
   const CRAFT_ORDER = [
     ...FINAL_ITEMS,
@@ -140,7 +145,11 @@
   }
 
   function normalizeSavedState(candidate) {
-    if (!candidate || typeof candidate !== "object" || candidate.version !== STORAGE_VERSION) {
+    if (
+      !candidate
+      || typeof candidate !== "object"
+      || (candidate.version !== 1 && candidate.version !== STORAGE_VERSION)
+    ) {
       return null;
     }
     const selectedPreset = candidate.selectedPreset;
@@ -150,6 +159,15 @@
     if (!candidate.targets || typeof candidate.targets !== "object") return null;
     if (!candidate.stock || typeof candidate.stock !== "object") return null;
 
+    let sections = { ...SECTION_DEFAULTS };
+    if (candidate.version === STORAGE_VERSION) {
+      if (!candidate.sections || typeof candidate.sections !== "object") return null;
+      for (const section of Object.keys(SECTION_DEFAULTS)) {
+        if (typeof candidate.sections[section] !== "boolean") return null;
+        sections[section] = candidate.sections[section];
+      }
+    }
+
     try {
       const targets = Object.fromEntries(
         FINAL_ITEMS.map((item) => [item, countOf(candidate.targets, item)]),
@@ -158,7 +176,7 @@
       const stock = Object.fromEntries(
         stockItems.map((item) => [item, countOf(candidate.stock, item)]),
       );
-      return { version: STORAGE_VERSION, selectedPreset, targets, stock };
+      return { version: STORAGE_VERSION, selectedPreset, targets, stock, sections };
     } catch (error) {
       if (error instanceof RangeError) return null;
       throw error;
@@ -170,6 +188,7 @@
     INTERMEDIATE_ITEMS: Object.freeze([...INTERMEDIATE_ITEMS]),
     RAW_ITEMS: Object.freeze([...RAW_ITEMS]),
     CRAFT_ORDER: Object.freeze([...CRAFT_ORDER]),
+    SECTION_DEFAULTS,
     STORAGE_VERSION,
     calculate,
     getPreset,

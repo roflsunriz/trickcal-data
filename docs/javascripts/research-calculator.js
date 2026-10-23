@@ -119,8 +119,9 @@
     return wrapper;
   }
 
-  function inputSection(title, description, table, open) {
+  function inputSection(section, title, description, table, open) {
     const details = element("details", "research-calculator__inputs");
+    details.dataset.section = section;
     details.open = open;
     details.append(element("summary", "", title));
     details.append(element("p", "research-calculator__hint", description));
@@ -221,12 +222,13 @@
       selectedPreset: state.selectedPreset,
       targets: values.targets,
       stock: values.stock,
+      sections: state.sections,
     };
     const normalized = core.normalizeSavedState(candidate);
     if (normalized === null) return;
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
-      statusNode.textContent = "入力内容はこのブラウザに自動保存されます。";
+      statusNode.textContent = "入力内容と開閉状態はこのブラウザに自動保存されます。";
     } catch (error) {
       state.storageAvailable = false;
       statusNode.textContent = "このブラウザでは入力内容を保存できません。";
@@ -323,6 +325,7 @@
       direct: {},
       selectedPreset: null,
       storageAvailable: false,
+      sections: { ...core.SECTION_DEFAULTS },
       iconMap,
     };
     container.replaceChildren();
@@ -331,23 +334,14 @@
       element(
         "p",
         "research-calculator__description",
-        "目標数と現在の所持数を入力すると、追加でクラフトする成果物・中間生成物と、不足する基礎素材を計算します。入力内容はこのブラウザにだけ保存され、外部へ送信されません。",
+        "目標数と現在の所持数を入力すると、追加でクラフトする成果物・中間生成物と、不足する基礎素材を計算します。入力内容と入力欄の開閉状態はこのブラウザにだけ保存され、外部へ送信されません。",
       ),
     );
 
-    const controls = element("div", "research-calculator__controls");
-    for (const presetStage of [10, 11, 12]) {
-      const button = element("button", "research-calculator__button", `第${presetStage}段階を設定`);
-      button.type = "button";
-      button.dataset.preset = String(presetStage);
-      if (presetStage === stage) button.classList.add("is-current");
-      controls.append(button);
-    }
     const clear = element("button", "research-calculator__button is-secondary", "すべて0にする");
     clear.type = "button";
     clear.dataset.action = "clear";
-    controls.append(clear);
-    container.append(controls);
+    container.append(clear);
     const presetNote = element("p", "research-calculator__preset-note");
     presetNote.hidden = true;
     container.append(presetNote);
@@ -355,8 +349,9 @@
     storageStatus.setAttribute("aria-live", "polite");
     container.append(storageStatus);
 
-    container.append(
-      inputSection(
+    const sectionNodes = {
+      final: inputSection(
+        "final",
         "最終成果物",
         "完成後に必要な目標数と、すでに持っている数を入力します。",
         inputTable(stage, core.FINAL_ITEMS, [
@@ -365,38 +360,68 @@
         ], iconMap),
         true,
       ),
-    );
-    container.append(
-      inputSection(
+      intermediate: inputSection(
+        "intermediate",
         "中間生成物",
         "現在の所持数を入力します。上位アイテムから必要数を自動計算し、所持分を差し引きます。",
         inputTable(stage, core.INTERMEDIATE_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
         false,
       ),
-    );
-    container.append(
-      inputSection(
+      raw: inputSection(
+        "raw",
         "基礎素材の所持数",
         "クラフトに使える基礎素材の現在庫を入力します。",
         inputTable(stage, core.RAW_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
         true,
       ),
-    );
+    };
+    container.append(...Object.values(sectionNodes));
 
     const resultNode = element("div", "research-calculator__results");
     resultNode.setAttribute("aria-live", "polite");
     container.append(resultNode);
 
+    const loaded = loadSavedState(core);
+    state.storageAvailable = loaded.available;
+    if (loaded.saved) {
+      setInputValues(container, {
+        targets: loaded.saved.targets,
+        stock: loaded.saved.stock,
+      });
+      if (loaded.saved.selectedPreset === null) {
+        state.selectedPreset = null;
+        state.direct = {};
+      } else if (loaded.saved.selectedPreset === stage) {
+        state.selectedPreset = stage;
+        state.direct = { ...core.getPreset(stage).direct };
+      } else {
+        setPreset(container, stage, core, state, presetNote);
+      }
+      state.sections = { ...loaded.saved.sections };
+      for (const [section, details] of Object.entries(sectionNodes)) {
+        details.open = state.sections[section];
+      }
+      renderPresetNote(presetNote, state.direct);
+      storageStatus.textContent = "保存済みの入力内容と開閉状態を復元しました。";
+    } else {
+      setPreset(container, stage, core, state, presetNote);
+      storageStatus.textContent = loaded.available
+        ? "入力内容と開閉状態はこのブラウザに自動保存されます。"
+        : "このブラウザでは入力内容を保存できません。";
+    }
+    const initialValues = renderResults(container, resultNode, core, state);
+    state.lastValidValues = initialValues;
+
     container.addEventListener("input", () => {
       const values = renderResults(container, resultNode, core, state);
-      if (values) saveState(values, state, core, storageStatus);
+      if (values) {
+        state.lastValidValues = values;
+        saveState(values, state, core, storageStatus);
+      }
     });
     container.addEventListener("click", (event) => {
       const button = event.target.closest("button");
       if (!button) return;
-      if (button.dataset.preset) {
-        setPreset(container, Number(button.dataset.preset), core, state, presetNote);
-      }
       if (button.dataset.action === "clear") {
         setAllInputs(container, 0);
         state.direct = {};
@@ -404,29 +429,19 @@
         renderPresetNote(presetNote, state.direct);
       }
       const values = renderResults(container, resultNode, core, state);
-      if (values) saveState(values, state, core, storageStatus);
+      if (values) {
+        state.lastValidValues = values;
+        saveState(values, state, core, storageStatus);
+      }
     });
-
-    const loaded = loadSavedState(core);
-    state.storageAvailable = loaded.available;
-    if (loaded.saved) {
-      state.selectedPreset = loaded.saved.selectedPreset;
-      state.direct = state.selectedPreset === null
-        ? {}
-        : { ...core.getPreset(state.selectedPreset).direct };
-      setInputValues(container, {
-        targets: loaded.saved.targets,
-        stock: loaded.saved.stock,
+    for (const [section, details] of Object.entries(sectionNodes)) {
+      details.addEventListener("toggle", () => {
+        state.sections[section] = details.open;
+        if (state.lastValidValues) {
+          saveState(state.lastValidValues, state, core, storageStatus);
+        }
       });
-      renderPresetNote(presetNote, state.direct);
-      storageStatus.textContent = "保存済みの入力内容を復元しました。";
-    } else {
-      setPreset(container, stage, core, state, presetNote);
-      storageStatus.textContent = loaded.available
-        ? "入力内容はこのブラウザに自動保存されます。"
-        : "このブラウザでは入力内容を保存できません。";
     }
-    renderResults(container, resultNode, core, state);
   }
 
   async function initializeAll() {
