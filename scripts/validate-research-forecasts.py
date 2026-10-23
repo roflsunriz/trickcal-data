@@ -20,7 +20,7 @@ RESEARCH_MULTIPLIERS = {
     "徹夜アイマスク": 10,
     "キャラのハンコ": 16,
 }
-FINAL_MULTIPLIERS = {
+RAW_MULTIPLIERS = {
     "サラサラの鉄粉": 171,
     "パリパリの金箔": 66,
     "再生プラスチック": 159,
@@ -30,14 +30,16 @@ FINAL_MULTIPLIERS = {
     "やわらか粘土": 160,
     "曲がったもの": 96,
 }
-INTERMEDIATE_MULTIPLIERS = {
+PROCESSING_MULTIPLIERS = {
     "MUSIMチップ": 11,
+    "バラバラの基板": 22,
     "柔らか金属": 53,
     "バッテリーパック": 10,
     "曲がった針金": 30,
     "S字半導体": 10,
     "地球から来た鉛": 50,
     "こねこね粘土": 16,
+    "LED電球": 0,
     "EGOブロック": 32,
     "手形": 48,
 }
@@ -83,27 +85,27 @@ def validate_stage(stage: int, base: int) -> list[str]:
         if row is None or number(row[3]) != expected:
             errors.append(f"第{stage}段階 {material}: 予想研究材料は{expected}個")
 
-    final_rows = table_rows(
-        section(text, f"## 第{stage}段階の最終素材予想", "## 中間素材")
+    raw_rows = table_rows(
+        section(text, f"## 第{stage}段階の原材料予想", "## レベル1・2加工素材")
     )
-    final_map = {row[0]: row for row in final_rows if row[0] in FINAL_MULTIPLIERS}
-    for material, multiplier in FINAL_MULTIPLIERS.items():
-        row = final_map.get(material)
+    raw_map = {row[0]: row for row in raw_rows if row[0] in RAW_MULTIPLIERS}
+    for material, multiplier in RAW_MULTIPLIERS.items():
+        row = raw_map.get(material)
         expected = base * multiplier
         if row is None or number(row[1]) != expected:
-            errors.append(f"第{stage}段階 {material}: 最終素材は{expected}個")
+            errors.append(f"第{stage}段階 {material}: 原材料は{expected}個")
 
-    intermediate_rows = table_rows(section(text, "## 中間素材の必要数予想", None))
-    intermediate_map = {
+    processing_rows = table_rows(section(text, "## レベル1・2加工素材の必要数予想", None))
+    processing_map = {
         row[0]: row
-        for row in intermediate_rows
-        if row[0] in INTERMEDIATE_MULTIPLIERS
+        for row in processing_rows
+        if row[0] in PROCESSING_MULTIPLIERS
     }
-    for material, multiplier in INTERMEDIATE_MULTIPLIERS.items():
-        row = intermediate_map.get(material)
+    for material, multiplier in PROCESSING_MULTIPLIERS.items():
+        row = processing_map.get(material)
         expected = base * multiplier
         if row is None or number(row[1]) != expected:
-            errors.append(f"第{stage}段階 {material}: 中間素材は{expected}個")
+            errors.append(f"第{stage}段階 {material}: 加工素材は{expected}個")
 
     for stale_text in ("月間教団素材パック", "想定金額"):
         if stale_text in text:

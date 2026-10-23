@@ -85,7 +85,7 @@
     input.dataset.item = item;
     input.dataset.field = field;
     input.id = `research-${stage}-${field}-${item}`;
-    input.setAttribute("aria-label", `${item}の${field === "targets" ? "目標数" : "所持数"}`);
+    input.setAttribute("aria-label", `${item}の所持数`);
     return input;
   }
 
@@ -109,7 +109,11 @@
       row.append(itemCell);
       for (const column of columns) {
         const cell = document.createElement("td");
-        cell.append(numberInput(item, column.field, stage));
+        if (column.field) {
+          cell.append(numberInput(item, column.field, stage));
+        } else {
+          cell.textContent = numberFormat.format(column.values[item] || 0);
+        }
         row.append(cell);
       }
       body.append(row);
@@ -153,8 +157,12 @@
     return wrapper;
   }
 
-  function readInputs(container, fixedDirect) {
-    const values = { targets: {}, direct: { ...fixedDirect }, stock: {} };
+  function readInputs(container, fixedTargets, fixedDirect) {
+    const values = {
+      targets: { ...fixedTargets },
+      direct: { ...fixedDirect },
+      stock: {},
+    };
     const errors = [];
     for (const input of container.querySelectorAll("input[data-item][data-field]")) {
       const value = input.value.trim() === "" ? 0 : Number(input.value);
@@ -164,7 +172,7 @@
         errors.push(`${input.dataset.item}は0～${numberFormat.format(MAX_COUNT)}の整数で入力してください`);
         continue;
       }
-      values[input.dataset.field][input.dataset.item] = value;
+      values.stock[input.dataset.item] = value;
     }
     return { values, errors };
   }
@@ -176,13 +184,11 @@
     }
   }
 
-  function setInputValues(container, values) {
+  function setInputValues(container, stock) {
     setAllInputs(container, 0);
-    for (const [field, record] of Object.entries(values)) {
-      for (const [item, value] of Object.entries(record)) {
-        const input = container.querySelector(`input[data-field="${field}"][data-item="${item}"]`);
-        if (input) input.value = String(value);
-      }
+    for (const [item, value] of Object.entries(stock)) {
+      const input = container.querySelector(`input[data-field="stock"][data-item="${item}"]`);
+      if (input) input.value = String(value);
     }
   }
 
@@ -219,8 +225,6 @@
     if (!state.storageAvailable) return;
     const candidate = {
       version: core.STORAGE_VERSION,
-      selectedPreset: state.selectedPreset,
-      targets: values.targets,
       stock: values.stock,
       sections: state.sections,
     };
@@ -239,23 +243,12 @@
     const entries = Object.entries(direct).filter(([, quantity]) => quantity > 0);
     noteNode.hidden = entries.length === 0;
     noteNode.textContent = entries.length
-      ? `第10段階で研究に直接使う中間生成物も自動加算しています: ${entries.map(([item, quantity]) => `${item} ${numberFormat.format(quantity)}個`).join("、")}`
+      ? `第10段階で研究室へ直接渡すレベル1・2加工素材も必要数へ加算しています: ${entries.map(([item, quantity]) => `${item} ${numberFormat.format(quantity)}個`).join("、")}`
       : "";
   }
 
-  function setPreset(container, stage, core, state, noteNode) {
-    const preset = core.getPreset(stage);
-    state.selectedPreset = stage;
-    state.direct = { ...preset.direct };
-    for (const [item, value] of Object.entries(preset.targets)) {
-      const input = container.querySelector(`input[data-field="targets"][data-item="${item}"]`);
-      if (input) input.value = String(value);
-    }
-    renderPresetNote(noteNode, state.direct);
-  }
-
   function renderResults(container, resultNode, core, state) {
-    const { values, errors } = readInputs(container, state.direct);
+    const { values, errors } = readInputs(container, state.targets, state.direct);
     resultNode.replaceChildren();
     if (errors.length) {
       const list = element("ul", "research-calculator__errors");
@@ -285,12 +278,22 @@
       });
     }
 
-    const planHeaders = ["アイテム", "必要総数", "所持から使用", "追加クラフト", "使用後の残数"];
-    resultNode.append(element("h4", "", "最終成果物の必要クラフト数"));
+    const planHeaders = ["加工素材", "必要総数", "所持から使用", "生産する個数", "生産後の残数"];
+    resultNode.append(
+      element(
+        "p",
+        "research-calculator__flow",
+        "生産の流れ: 原材料 → レベル1加工素材 → レベル2加工素材 → レベル3加工素材 → 研究室",
+      ),
+    );
+    resultNode.append(element("h4", "", "レベル3加工素材（研究室へ渡す最終成果物）"));
     resultNode.append(resultTable(planHeaders, planRows(core.FINAL_ITEMS), state.iconMap));
 
-    resultNode.append(element("h4", "", "中間生成物の必要クラフト数"));
-    resultNode.append(resultTable(planHeaders, planRows(core.INTERMEDIATE_ITEMS), state.iconMap));
+    resultNode.append(element("h4", "", "レベル2加工素材"));
+    resultNode.append(resultTable(planHeaders, planRows(core.LEVEL2_ITEMS), state.iconMap));
+
+    resultNode.append(element("h4", "", "レベル1加工素材"));
+    resultNode.append(resultTable(planHeaders, planRows(core.LEVEL1_ITEMS), state.iconMap));
 
     const rawRows = core.RAW_ITEMS.map((item) => {
       const entry = result.raw[item];
@@ -302,16 +305,16 @@
         numberFormat.format(entry.remaining),
       ];
     });
-    resultNode.append(element("h4", "", "基礎素材"));
-    resultNode.append(resultTable(["素材", "消費", "所持", "不足", "使用後の残数"], rawRows, state.iconMap));
+    resultNode.append(element("h4", "", "原材料（生産室では作らない素材）"));
+    resultNode.append(resultTable(["原材料", "生産に必要", "所持", "不足（集める）", "使用後の残数"], rawRows, state.iconMap));
     const shortages = core.RAW_ITEMS.filter((item) => result.raw[item].shortage > 0);
     resultNode.append(
       element(
         "p",
         shortages.length ? "research-calculator__summary is-short" : "research-calculator__summary is-ready",
         shortages.length
-          ? `不足している基礎素材が${shortages.length}種類あります。`
-          : "所持している基礎素材でクラフトできます。",
+          ? `不足している原材料が${shortages.length}種類あります。`
+          : "所持している素材だけで必要な生産を完了できます。",
       ),
     );
     return values;
@@ -321,9 +324,10 @@
     if (container.dataset.initialized === "true") return;
     container.dataset.initialized = "true";
     const stage = Number(container.dataset.stage);
+    const preset = core.getPreset(stage);
     const state = {
-      direct: {},
-      selectedPreset: null,
+      targets: { ...preset.targets },
+      direct: { ...preset.direct },
       storageAvailable: false,
       sections: { ...core.SECTION_DEFAULTS },
       iconMap,
@@ -334,11 +338,11 @@
       element(
         "p",
         "research-calculator__description",
-        "目標数と現在の所持数を入力すると、追加でクラフトする成果物・中間生成物と、不足する基礎素材を計算します。入力内容と入力欄の開閉状態はこのブラウザにだけ保存され、外部へ送信されません。",
+        `研究室の第${stage}段階で必要なレベル3加工素材を目標に、各レベルの所持数を先に使って、生産する個数と不足する原材料を計算します。所持数と入力欄の開閉状態はこのブラウザにだけ保存され、外部へ送信されません。`,
       ),
     );
 
-    const clear = element("button", "research-calculator__button is-secondary", "すべて0にする");
+    const clear = element("button", "research-calculator__button is-secondary", "所持数をすべて0にする");
     clear.type = "button";
     clear.dataset.action = "clear";
     container.append(clear);
@@ -352,25 +356,32 @@
     const sectionNodes = {
       final: inputSection(
         "final",
-        "最終成果物",
-        "完成後に必要な目標数と、すでに持っている数を入力します。",
+        "レベル3加工素材（最終成果物）",
+        "研究室で必要な数は表示中の段階から自動設定されます。現在持っている数だけ入力します。",
         inputTable(stage, core.FINAL_ITEMS, [
-          { field: "targets", label: "目標数" },
+          { label: "研究必要数", values: state.targets },
           { field: "stock", label: "所持数" },
         ], iconMap),
         true,
       ),
-      intermediate: inputSection(
-        "intermediate",
-        "中間生成物",
-        "現在の所持数を入力します。上位アイテムから必要数を自動計算し、所持分を差し引きます。",
-        inputTable(stage, core.INTERMEDIATE_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
+      level2: inputSection(
+        "level2",
+        "レベル2加工素材の所持数",
+        "持っている分は先に使用し、不足分だけをレベル1加工素材から生産します。",
+        inputTable(stage, core.LEVEL2_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
+        false,
+      ),
+      level1: inputSection(
+        "level1",
+        "レベル1加工素材の所持数",
+        "持っている分は先に使用し、不足分だけを原材料から生産します。",
+        inputTable(stage, core.LEVEL1_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
         false,
       ),
       raw: inputSection(
         "raw",
-        "基礎素材の所持数",
-        "クラフトに使える基礎素材の現在庫を入力します。",
+        "原材料の所持数",
+        "冒険協会などで集めた、生産室では作らない素材の現在庫を入力します。",
         inputTable(stage, core.RAW_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
         true,
       ),
@@ -384,19 +395,7 @@
     const loaded = loadSavedState(core);
     state.storageAvailable = loaded.available;
     if (loaded.saved) {
-      setInputValues(container, {
-        targets: loaded.saved.targets,
-        stock: loaded.saved.stock,
-      });
-      if (loaded.saved.selectedPreset === null) {
-        state.selectedPreset = null;
-        state.direct = {};
-      } else if (loaded.saved.selectedPreset === stage) {
-        state.selectedPreset = stage;
-        state.direct = { ...core.getPreset(stage).direct };
-      } else {
-        setPreset(container, stage, core, state, presetNote);
-      }
+      setInputValues(container, loaded.saved.stock);
       state.sections = { ...loaded.saved.sections };
       for (const [section, details] of Object.entries(sectionNodes)) {
         details.open = state.sections[section];
@@ -404,7 +403,7 @@
       renderPresetNote(presetNote, state.direct);
       storageStatus.textContent = "保存済みの入力内容と開閉状態を復元しました。";
     } else {
-      setPreset(container, stage, core, state, presetNote);
+      renderPresetNote(presetNote, state.direct);
       storageStatus.textContent = loaded.available
         ? "入力内容と開閉状態はこのブラウザに自動保存されます。"
         : "このブラウザでは入力内容を保存できません。";
@@ -424,9 +423,6 @@
       if (!button) return;
       if (button.dataset.action === "clear") {
         setAllInputs(container, 0);
-        state.direct = {};
-        state.selectedPreset = null;
-        renderPresetNote(presetNote, state.direct);
       }
       const values = renderResults(container, resultNode, core, state);
       if (values) {

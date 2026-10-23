@@ -9,7 +9,7 @@
   <p>計算機を読み込んでいます…</p>
 </div>
 
-素材パックなどで入手した最終成果物・中間生成物は、計算機の所持数へ入力すると残りのクラフト数から差し引けます。
+素材パックなどで入手したレベル1～3加工素材は、該当レベルの所持数へ入力すると必要な生産数から差し引けます。
 
 ## 第10段階の研究材料
 
@@ -42,7 +42,7 @@
 | <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> | 406個 | <span class="lab-item" data-lab-item="金の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-79px"></span>金の匙</span>用384個 + <span class="lab-item" data-lab-item="LED電球"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-79px"></span>LED電球</span>用14個 + 研究用8個 |
 | <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> | 332個 | <span class="lab-item" data-lab-item="徹夜アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-53px"></span>徹夜アイマスク</span>用192個 + <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span>用128個 + 研究用12個 |
 
-## 最終素材の合計
+## 原材料の合計
 
 | 素材 | 必要数 |
 | --- | ---: |

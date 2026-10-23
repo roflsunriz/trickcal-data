@@ -2,19 +2,22 @@
   "use strict";
 
   const FINAL_ITEMS = ["感性コア", "金の匙", "徹夜アイマスク", "キャラのハンコ"];
-  const INTERMEDIATE_ITEMS = [
+  const LEVEL2_ITEMS = [
     "MUSIMチップ",
     "バッテリーパック",
     "S電子半導体",
     "こねこね粘土",
-    "手形",
     "LED電球",
+  ];
+  const LEVEL1_ITEMS = [
     "バラバラの基板",
     "柔らか金属",
     "曲がった針金",
     "地球から来た鉛",
     "EGOブロック",
+    "手形",
   ];
+  const PROCESSING_ITEMS = [...LEVEL2_ITEMS, ...LEVEL1_ITEMS];
   const RAW_ITEMS = [
     "サラサラの鉄粉",
     "パリパリの金箔",
@@ -24,26 +27,17 @@
     "曲がったもの",
     "やわらか粘土",
   ];
-  const STORAGE_VERSION = 2;
+  const STORAGE_VERSION = 3;
   const SECTION_DEFAULTS = Object.freeze({
     final: true,
-    intermediate: false,
+    level2: false,
+    level1: false,
     raw: true,
   });
-  const PRESET_STAGES = [10, 11, 12];
   const CRAFT_ORDER = [
     ...FINAL_ITEMS,
-    "MUSIMチップ",
-    "バッテリーパック",
-    "S電子半導体",
-    "こねこね粘土",
-    "手形",
-    "LED電球",
-    "バラバラの基板",
-    "柔らか金属",
-    "曲がった針金",
-    "地球から来た鉛",
-    "EGOブロック",
+    ...LEVEL2_ITEMS,
+    ...LEVEL1_ITEMS,
   ];
 
   const RECIPES = {
@@ -148,15 +142,10 @@
     if (
       !candidate
       || typeof candidate !== "object"
-      || (candidate.version !== 1 && candidate.version !== STORAGE_VERSION)
+      || ![1, 2, STORAGE_VERSION].includes(candidate.version)
     ) {
       return null;
     }
-    const selectedPreset = candidate.selectedPreset;
-    if (selectedPreset !== null && !PRESET_STAGES.includes(selectedPreset)) {
-      return null;
-    }
-    if (!candidate.targets || typeof candidate.targets !== "object") return null;
     if (!candidate.stock || typeof candidate.stock !== "object") return null;
 
     let sections = { ...SECTION_DEFAULTS };
@@ -166,17 +155,25 @@
         if (typeof candidate.sections[section] !== "boolean") return null;
         sections[section] = candidate.sections[section];
       }
+    } else if (candidate.version === 2) {
+      if (!candidate.sections || typeof candidate.sections !== "object") return null;
+      for (const section of ["final", "intermediate", "raw"]) {
+        if (typeof candidate.sections[section] !== "boolean") return null;
+      }
+      sections = {
+        final: candidate.sections.final,
+        level2: candidate.sections.intermediate,
+        level1: candidate.sections.intermediate,
+        raw: candidate.sections.raw,
+      };
     }
 
     try {
-      const targets = Object.fromEntries(
-        FINAL_ITEMS.map((item) => [item, countOf(candidate.targets, item)]),
-      );
-      const stockItems = [...FINAL_ITEMS, ...INTERMEDIATE_ITEMS, ...RAW_ITEMS];
+      const stockItems = [...FINAL_ITEMS, ...PROCESSING_ITEMS, ...RAW_ITEMS];
       const stock = Object.fromEntries(
         stockItems.map((item) => [item, countOf(candidate.stock, item)]),
       );
-      return { version: STORAGE_VERSION, selectedPreset, targets, stock, sections };
+      return { version: STORAGE_VERSION, stock, sections };
     } catch (error) {
       if (error instanceof RangeError) return null;
       throw error;
@@ -185,7 +182,9 @@
 
   global.TrickcalResearchCalculator = Object.freeze({
     FINAL_ITEMS: Object.freeze([...FINAL_ITEMS]),
-    INTERMEDIATE_ITEMS: Object.freeze([...INTERMEDIATE_ITEMS]),
+    LEVEL2_ITEMS: Object.freeze([...LEVEL2_ITEMS]),
+    LEVEL1_ITEMS: Object.freeze([...LEVEL1_ITEMS]),
+    PROCESSING_ITEMS: Object.freeze([...PROCESSING_ITEMS]),
     RAW_ITEMS: Object.freeze([...RAW_ITEMS]),
     CRAFT_ORDER: Object.freeze([...CRAFT_ORDER]),
     SECTION_DEFAULTS,
