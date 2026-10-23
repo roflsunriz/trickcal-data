@@ -198,6 +198,12 @@
   font-size: 0.85em;
 }
 
+.md-typeset .research-calculator__storage-status {
+  margin: -0.35rem 0 0.85rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8em;
+}
+
 .md-typeset .research-calculator__button {
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--md-primary-fg-color);

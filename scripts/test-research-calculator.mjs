@@ -12,6 +12,10 @@ const uiSource = readFileSync(
   "utf8",
 );
 assert.doesNotMatch(uiSource, /直接必要数/);
+assert.match(uiSource, /localStorage/);
+assert.match(uiSource, /trickcal-data\.research-calculator/);
+assert.match(uiSource, /game-assets\.json/);
+assert.match(uiSource, /function itemLabel/);
 const context = {};
 runInNewContext(source, context, { filename: "research-calculator-core.js" });
 const calculator = context.TrickcalResearchCalculator;
@@ -83,6 +87,46 @@ assert.ok(Object.values(completed.raw).every((entry) => entry.demand === 0));
 assert.throws(
   () => calculator.calculate({ targets: { 感性コア: -1 } }),
   /0以上の整数/,
+);
+
+const normalized = calculator.normalizeSavedState({
+  version: calculator.STORAGE_VERSION,
+  selectedPreset: 11,
+  targets: { 感性コア: 42 },
+  stock: { MUSIMチップ: 7, サラサラの鉄粉: 99 },
+});
+assert.equal(normalized.selectedPreset, 11);
+assert.equal(normalized.targets.感性コア, 42);
+assert.equal(normalized.targets.金の匙, 0);
+assert.equal(normalized.stock.MUSIMチップ, 7);
+assert.equal(normalized.stock.サラサラの鉄粉, 99);
+assert.equal(normalized.stock.金の匙, 0);
+assert.equal(
+  calculator.normalizeSavedState({
+    version: calculator.STORAGE_VERSION + 1,
+    selectedPreset: 11,
+    targets: {},
+    stock: {},
+  }),
+  null,
+);
+assert.equal(
+  calculator.normalizeSavedState({
+    version: calculator.STORAGE_VERSION,
+    selectedPreset: 99,
+    targets: {},
+    stock: {},
+  }),
+  null,
+);
+assert.equal(
+  calculator.normalizeSavedState({
+    version: calculator.STORAGE_VERSION,
+    selectedPreset: null,
+    targets: { 感性コア: -1 },
+    stock: {},
+  }),
+  null,
 );
 assert.throws(
   () => calculator.calculate({ targets: { 感性コア: 1.5 } }),
