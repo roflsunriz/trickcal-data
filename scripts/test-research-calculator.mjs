@@ -16,6 +16,9 @@ assert.match(uiSource, /localStorage/);
 assert.match(uiSource, /trickcal-data\.research-calculator/);
 assert.match(uiSource, /game-assets\.json/);
 assert.match(uiSource, /function itemLabel/);
+assert.match(uiSource, /最終成果物の必要クラフト数/);
+assert.match(uiSource, /中間生成物の必要クラフト数/);
+assert.match(uiSource, /planRows\(core\.INTERMEDIATE_ITEMS\)/);
 const context = {};
 runInNewContext(source, context, { filename: "research-calculator-core.js" });
 const calculator = context.TrickcalResearchCalculator;
@@ -68,6 +71,42 @@ assert.equal(stage10.plan.地球から来た鉛.demand, 332);
 assert.equal(stage10.plan.バラバラの基板.demand, 268);
 assert.equal(stage10.plan.柔らか金属.demand, 652);
 assert.equal(stage10.plan.曲がった針金.demand, 406);
+
+const stage11 = calculatePreset(11);
+assert.deepEqual(
+  Object.fromEntries(calculator.INTERMEDIATE_ITEMS.map((item) => [item, stage11.plan[item].craft])),
+  {
+    MUSIMチップ: 132,
+    バッテリーパック: 120,
+    S電子半導体: 120,
+    こねこね粘土: 192,
+    手形: 576,
+    LED電球: 0,
+    バラバラの基板: 264,
+    柔らか金属: 636,
+    曲がった針金: 360,
+    地球から来た鉛: 600,
+    EGOブロック: 384,
+  },
+);
+
+const stage12 = calculatePreset(12);
+assert.deepEqual(
+  Object.fromEntries(calculator.INTERMEDIATE_ITEMS.map((item) => [item, stage12.plan[item].craft])),
+  {
+    MUSIMチップ: 165,
+    バッテリーパック: 150,
+    S電子半導体: 150,
+    こねこね粘土: 240,
+    手形: 720,
+    LED電球: 0,
+    バラバラの基板: 330,
+    柔らか金属: 795,
+    曲がった針金: 450,
+    地球から来た鉛: 750,
+    EGOブロック: 480,
+  },
+);
 
 const stocked = calculator.calculate({
   targets: { 感性コア: 1 },

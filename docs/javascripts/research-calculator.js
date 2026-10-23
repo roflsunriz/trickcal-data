@@ -270,12 +270,8 @@
       return null;
     }
 
-    const craftRows = core.CRAFT_ORDER
-      .filter((item) => {
-        const entry = result.plan[item];
-        return entry.demand > 0 || entry.owned > 0;
-      })
-      .map((item) => {
+    function planRows(items) {
+      return items.map((item) => {
         const entry = result.plan[item];
         return [
           item,
@@ -285,14 +281,14 @@
           numberFormat.format(entry.remaining),
         ];
       });
-    resultNode.append(element("h4", "", "クラフト計画"));
-    if (craftRows.length) {
-      resultNode.append(
-        resultTable(["アイテム", "必要総数", "所持から使用", "クラフト", "使用後の残数"], craftRows, state.iconMap),
-      );
-    } else {
-      resultNode.append(element("p", "", "目標数を入力してください。"));
     }
+
+    const planHeaders = ["アイテム", "必要総数", "所持から使用", "追加クラフト", "使用後の残数"];
+    resultNode.append(element("h4", "", "最終成果物の必要クラフト数"));
+    resultNode.append(resultTable(planHeaders, planRows(core.FINAL_ITEMS), state.iconMap));
+
+    resultNode.append(element("h4", "", "中間生成物の必要クラフト数"));
+    resultNode.append(resultTable(planHeaders, planRows(core.INTERMEDIATE_ITEMS), state.iconMap));
 
     const rawRows = core.RAW_ITEMS.map((item) => {
       const entry = result.raw[item];
