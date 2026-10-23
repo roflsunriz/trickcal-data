@@ -4,11 +4,19 @@
   const MAX_COUNT = 99_999_999;
   const STORAGE_KEY = "trickcal-data.research-calculator";
   const numberFormat = new Intl.NumberFormat("ja-JP");
+  const personalityClasses = {
+    純粋: "pure",
+    冷静: "cool",
+    狂気: "madness",
+    活発: "lively",
+    憂鬱: "gloomy",
+    裏面: "reverse",
+  };
   const calculatorScriptUrl = document.currentScript && document.currentScript.src;
   const manifestUrl = calculatorScriptUrl
     ? new URL("../assets/game-assets.json", calculatorScriptUrl)
     : new URL("assets/game-assets.json", document.baseURI);
-  let iconMapPromise;
+  let assetMapsPromise;
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -17,16 +25,15 @@
     return node;
   }
 
-  async function loadItemIcons() {
-    if (iconMapPromise) return iconMapPromise;
-    iconMapPromise = (async () => {
+  async function loadAssetMaps() {
+    if (assetMapsPromise) return assetMapsPromise;
+    assetMapsPromise = (async () => {
       try {
         const response = await fetch(manifestUrl, { credentials: "same-origin" });
-        if (!response.ok) return new Map();
+        if (!response.ok) return { itemIcons: new Map(), apostles: new Map() };
         const manifest = await response.json();
-        if (!Array.isArray(manifest.research_items)) return new Map();
         const icons = new Map();
-        for (const entry of manifest.research_items) {
+        for (const entry of Array.isArray(manifest.research_items) ? manifest.research_items : []) {
           if (
             typeof entry.name !== "string"
             || typeof entry.file !== "string"
@@ -47,12 +54,26 @@
             }
           }
         }
-        return icons;
+        const apostles = new Map();
+        for (const entry of Array.isArray(manifest.apostles) ? manifest.apostles : []) {
+          if (
+            typeof entry.name !== "string"
+            || typeof entry.file !== "string"
+            || typeof entry.personality !== "string"
+          ) {
+            continue;
+          }
+          apostles.set(entry.name, {
+            src: new URL(entry.file, manifestUrl).href,
+            personality: entry.personality,
+          });
+        }
+        return { itemIcons: icons, apostles };
       } catch (error) {
-        return new Map();
+        return { itemIcons: new Map(), apostles: new Map() };
       }
     })();
-    return iconMapPromise;
+    return assetMapsPromise;
   }
 
   function itemLabel(item, iconMap) {
@@ -73,6 +94,28 @@
     return label;
   }
 
+  function apostleLabel(name, apostleMap) {
+    const entry = apostleMap.get(name);
+    if (!entry) return element("span", "research-calculator__gatherer-name", name);
+    const personalityClass = personalityClasses[entry.personality];
+    const label = element(
+      "span",
+      `apostle-label${personalityClass ? ` personality-${personalityClass}` : ""}`,
+    );
+    const image = document.createElement("img");
+    image.src = entry.src;
+    image.alt = "";
+    image.loading = "lazy";
+    label.append(image, document.createTextNode(name));
+    return label;
+  }
+
+  function gathererList(names, apostleMap) {
+    const list = element("div", "research-calculator__gatherers");
+    for (const name of names || []) list.append(apostleLabel(name, apostleMap));
+    return list;
+  }
+
   function numberInput(item, field, stage) {
     const input = document.createElement("input");
     input.type = "number";
@@ -89,7 +132,7 @@
     return input;
   }
 
-  function inputTable(stage, items, columns, iconMap) {
+  function inputTable(stage, items, columns, iconMap, gatherers, apostleMap) {
     const wrapper = element("div", "research-calculator__table-wrap");
     const table = element("table", "research-calculator__table");
     const head = document.createElement("thead");
@@ -98,6 +141,7 @@
     for (const column of columns) {
       headRow.append(element("th", "", column.label));
     }
+    if (gatherers) headRow.append(element("th", "", "主な採集使徒"));
     head.append(headRow);
     table.append(head);
 
@@ -116,6 +160,11 @@
         }
         row.append(cell);
       }
+      if (gatherers) {
+        const gathererCell = document.createElement("td");
+        gathererCell.append(gathererList(gatherers[item], apostleMap));
+        row.append(gathererCell);
+      }
       body.append(row);
     }
     table.append(body);
@@ -133,7 +182,7 @@
     return details;
   }
 
-  function resultTable(headers, rows, iconMap) {
+  function resultTable(headers, rows, iconMap, gatherers, apostleMap) {
     const wrapper = element("div", "research-calculator__table-wrap");
     const table = element("table", "research-calculator__table research-calculator__result-table");
     const head = document.createElement("thead");
@@ -150,6 +199,11 @@
         else cell.textContent = value;
         row.append(cell);
       });
+      if (gatherers) {
+        const gathererCell = document.createElement("td");
+        gathererCell.append(gathererList(gatherers[values[0]], apostleMap));
+        row.append(gathererCell);
+      }
       body.append(row);
     }
     table.append(body);
@@ -306,7 +360,15 @@
       ];
     });
     resultNode.append(element("h4", "", "原材料（生産室では作らない素材）"));
-    resultNode.append(resultTable(["原材料", "生産に必要", "所持", "不足（集める）", "使用後の残数"], rawRows, state.iconMap));
+    resultNode.append(
+      resultTable(
+        ["原材料", "生産に必要", "所持", "不足（集める）", "使用後の残数", "主な採集使徒"],
+        rawRows,
+        state.iconMap,
+        core.RAW_GATHERERS,
+        state.apostleMap,
+      ),
+    );
     const shortages = core.RAW_ITEMS.filter((item) => result.raw[item].shortage > 0);
     resultNode.append(
       element(
@@ -320,7 +382,7 @@
     return values;
   }
 
-  function initializeCalculator(container, core, iconMap) {
+  function initializeCalculator(container, core, iconMap, apostleMap) {
     if (container.dataset.initialized === "true") return;
     container.dataset.initialized = "true";
     const stage = Number(container.dataset.stage);
@@ -331,6 +393,7 @@
       storageAvailable: false,
       sections: { ...core.SECTION_DEFAULTS },
       iconMap,
+      apostleMap,
     };
     container.replaceChildren();
 
@@ -381,8 +444,15 @@
       raw: inputSection(
         "raw",
         "原材料の所持数",
-        "冒険協会などで集めた、生産室では作らない素材の現在庫を入力します。",
-        inputTable(stage, core.RAW_ITEMS, [{ field: "stock", label: "所持数" }], iconMap),
+        "冒険協会などで集めた、生産室では作らない素材の現在庫を入力します。主な採集使徒は攻略Wikiで素材が履歴書の左上（黄緑枠）にある使徒です。",
+        inputTable(
+          stage,
+          core.RAW_ITEMS,
+          [{ field: "stock", label: "所持数" }],
+          iconMap,
+          core.RAW_GATHERERS,
+          apostleMap,
+        ),
         true,
       ),
     };
@@ -442,13 +512,13 @@
 
   async function initializeAll() {
     const core = globalThis.TrickcalResearchCalculator;
-    const iconMap = await loadItemIcons();
+    const { itemIcons, apostles } = await loadAssetMaps();
     for (const container of document.querySelectorAll("[data-research-calculator]")) {
       if (!core) {
         container.textContent = "計算機の読み込みに失敗しました。ページを再読み込みしてください。";
         continue;
       }
-      initializeCalculator(container, core, iconMap);
+      initializeCalculator(container, core, itemIcons, apostles);
     }
   }
 

@@ -205,6 +205,32 @@
   font-weight: 700;
 }
 
+.md-typeset .research-calculator__gatherers {
+  display: flex;
+  min-width: 12rem;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.md-typeset .research-calculator__gatherers .apostle-label {
+  min-height: 1.6rem;
+  padding: 0.08rem 0.4rem 0.08rem 0.1rem;
+  font-size: 0.78rem;
+}
+
+.md-typeset .research-calculator__gatherers .apostle-label img {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-basis: 1.4rem;
+}
+
+.md-typeset .research-calculator__gatherer-name {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .md-typeset .research-calculator__button {
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--md-primary-fg-color);

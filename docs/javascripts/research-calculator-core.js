@@ -27,6 +27,15 @@
     "曲がったもの",
     "やわらか粘土",
   ];
+  const RAW_GATHERERS = Object.freeze({
+    サラサラの鉄粉: Object.freeze(["アリス", "ネル", "ヘイリー", "ルポ"]),
+    パリパリの金箔: Object.freeze(["コミー", "ナイア", "リッツ"]),
+    再生プラスチック: Object.freeze(["コミー(水着)", "ジョアン", "スノキー", "スピッキー", "ダーヤ"]),
+    銅の匙: Object.freeze(["イフリート", "シェルム", "リスティ"]),
+    睡眠アイマスク: Object.freeze(["シスト", "ヨミ"]),
+    曲がったもの: Object.freeze(["ギデオン", "ヒルデ"]),
+    やわらか粘土: Object.freeze(["シェイディ", "ポーシャー", "リム", "ローネ"]),
+  });
   const STORAGE_VERSION = 3;
   const SECTION_DEFAULTS = Object.freeze({
     final: true,
@@ -186,6 +195,7 @@
     LEVEL1_ITEMS: Object.freeze([...LEVEL1_ITEMS]),
     PROCESSING_ITEMS: Object.freeze([...PROCESSING_ITEMS]),
     RAW_ITEMS: Object.freeze([...RAW_ITEMS]),
+    RAW_GATHERERS,
     CRAFT_ORDER: Object.freeze([...CRAFT_ORDER]),
     SECTION_DEFAULTS,
     STORAGE_VERSION,

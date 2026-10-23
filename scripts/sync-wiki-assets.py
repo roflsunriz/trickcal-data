@@ -32,6 +32,12 @@ SOURCES = {
         "%E7%94%9F%E7%94%A3%E3%83%A9%E3%83%9C"
     ),
 }
+REFERENCE_SOURCES = {
+    "adventure_association": (
+        "https://wikiwiki.jp/thetrickal/"
+        "%E5%86%92%E9%99%BA%E5%8D%94%E4%BC%9A"
+    ),
+}
 
 CARD_NAME_ALIASES = {
     "ルシ ‐ イードドリーム": "ルシ・イードドリーム",
@@ -272,7 +278,7 @@ def main() -> None:
 
     manifest = {
         "retrieved_at": RETRIEVED_AT,
-        "sources": SOURCES,
+        "sources": {**SOURCES, **REFERENCE_SOURCES},
         **groups,
     }
     manifest_path = ASSETS_DIR / "game-assets.json"

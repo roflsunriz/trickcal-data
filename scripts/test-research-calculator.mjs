@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { runInNewContext } from "node:vm";
 
 
@@ -21,6 +21,9 @@ assert.match(uiSource, /レベル3加工素材（研究室へ渡す最終成果�
 assert.match(uiSource, /planRows\(core\.LEVEL2_ITEMS\)/);
 assert.match(uiSource, /planRows\(core\.LEVEL1_ITEMS\)/);
 assert.match(uiSource, /原材料（生産室では作らない素材）/);
+assert.match(uiSource, /function gathererList/);
+assert.match(uiSource, /主な採集使徒/);
+assert.match(uiSource, /core\.RAW_GATHERERS/);
 assert.match(uiSource, /details\.addEventListener\("toggle"/);
 assert.match(uiSource, /sections: state\.sections/);
 assert.doesNotMatch(uiSource, /field: "targets"/);
@@ -41,6 +44,39 @@ assert.deepEqual(
   [...calculator.LEVEL1_ITEMS],
   ["バラバラの基板", "柔らか金属", "曲がった針金", "地球から来た鉛", "EGOブロック", "手形"],
 );
+assert.deepEqual(
+  Object.fromEntries(
+    Object.entries(calculator.RAW_GATHERERS).map(([item, names]) => [item, [...names]]),
+  ),
+  {
+    サラサラの鉄粉: ["アリス", "ネル", "ヘイリー", "ルポ"],
+    パリパリの金箔: ["コミー", "ナイア", "リッツ"],
+    再生プラスチック: ["コミー(水着)", "ジョアン", "スノキー", "スピッキー", "ダーヤ"],
+    銅の匙: ["イフリート", "シェルム", "リスティ"],
+    睡眠アイマスク: ["シスト", "ヨミ"],
+    曲がったもの: ["ギデオン", "ヒルデ"],
+    やわらか粘土: ["シェイディ", "ポーシャー", "リム", "ローネ"],
+  },
+);
+
+const manifest = JSON.parse(
+  readFileSync(new URL("../docs/assets/game-assets.json", import.meta.url), "utf8"),
+);
+assert.equal(
+  manifest.sources.adventure_association,
+  "https://wikiwiki.jp/thetrickal/%E5%86%92%E9%99%BA%E5%8D%94%E4%BC%9A",
+);
+const apostleAssets = new Map(manifest.apostles.map((entry) => [entry.name, entry.file]));
+for (const names of Object.values(calculator.RAW_GATHERERS)) {
+  for (const name of names) {
+    const file = apostleAssets.get(name);
+    assert.ok(file, `主な採集使徒の画像マニフェストがありません: ${name}`);
+    assert.ok(
+      existsSync(new URL(`../docs/assets/${file}`, import.meta.url)),
+      `主な採集使徒の画像ファイルがありません: ${name}`,
+    );
+  }
+}
 
 function calculatePreset(stage, stock = {}) {
   const preset = calculator.getPreset(stage);
