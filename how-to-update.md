@@ -13,6 +13,8 @@
 
 画像を同期した後、`python scripts/enrich-doc-tables.py` で攻略表の使徒ラベル、空欄アコーディオン、カード表の画像列を更新する。続けて `python scripts/enrich-research-tables.py` を実行し、生産ラボ第10～15段階の材料・中間素材・加工成果物へ画像を付ける。
 
+生産ラボ第13～15段階の予想値を変更した場合は、`python scripts/validate-research-forecasts.py` を実行する。第11・12段階の実測増加則、最終素材・中間素材の換算、旧第10段階ベースの購入パック試算が残っていないことを検査する。
+
 同期後は、全画像がWebP本体であること、Markdownの `src` がローカル画像を指すこと、使徒名・性格・カード名・研究素材名の対応に欠落がないことを検査し、`python scripts/build-docs.py` で表示を確認する。問題があれば変更コミットをrevertする。攻略Wikiから削除された画像はスクリプトが自動削除しないため、マニフェストとの差分を確認してから個別に整理する。
 
 ## Dependabot PR の更新
