@@ -60,3 +60,7 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/research-calculator-core.js
+  - javascripts/research-calculator.js

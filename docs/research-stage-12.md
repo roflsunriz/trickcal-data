@@ -2,6 +2,13 @@
 
 第12段階解放後の実データです。研究内容・必要数・所要時間と素材合計は、2026年10月23日に[トリッカル・もちもちほっペ大作戦 Wiki*「生産ラボ」](https://wikiwiki.jp/thetrickal/%E7%94%9F%E7%94%A3%E3%83%A9%E3%83%9C)の第11～第12段階を確認しました。
 
+## 素材クラフト計算機
+
+<div class="research-calculator" data-research-calculator data-stage="12">
+  <noscript>計算機を使うにはJavaScriptを有効にしてください。</noscript>
+  <p>計算機を読み込んでいます…</p>
+</div>
+
 ## 研究内容
 
 | 研究内容 | 研究材料 | 個数（括弧内は総数） | ゴールド | 時間 |

@@ -3,6 +3,7 @@
 - デプロイでは `scripts/build-docs.py` がGit履歴から各ページの更新日時を生成してからZensicalをstrictビルドする。浅いcheckoutでは日時が壊れるため、`.github/workflows/deploy.yml` の `fetch-depth: 0` を維持する（失敗例は [verification.md](verification.md)）。
 - 使徒画像は攻略Wikiの使徒一覧にある48px画像、カード画像は遺物・スペル一覧にある100px画像を正本とし、`scripts/sync-wiki-assets.py` でWebP本体と `docs/assets/game-assets.json` を同期する。2026-10-23時点の実装済み件数は使徒82名、遺物52枚、スペル36枚。表示上の「スノーキー」はWiki上の「スノキー」画像へ対応させる。
 - 生産ラボ第11・12段階は2026-10-23時点で解放済み。研究内容と最終素材合計は攻略Wiki「生産ラボ」の第11～第12段階および段階別総数表を正本とし、旧予想の購入パック試算は正式値と素材系統が異なるため使用しない。
-- 生産ラボ素材は攻略Wikiの24pxアイコンスプライトを正本とする。`scripts/sync-wiki-assets.py` で5枚のWebPスプライトと22種の位置・表記ゆれを同期し、`scripts/enrich-research-tables.py` で第10～15段階へ表示する。「基板」「S字半導体」「サラサラな鉄粉」はWiki上の現行名へ対応付ける。
+- 生産ラボ素材は攻略Wikiの24pxアイコンスプライトを正本とする。`scripts/sync-wiki-assets.py` で5枚のWebPスプライトと23種の位置・表記ゆれを同期し、`scripts/enrich-research-tables.py` で第10～15段階へ表示する。「基板」「S字半導体」「サラサラな鉄粉」はWiki上の現行名へ対応付ける。
 - バイオデンジャー攻略の空行は削除せず、`scripts/enrich-doc-tables.py` で使徒ごとの未記入件数を保持したネイティブ `details` 要素へ集約する。再実行時は既存件数を復元してから再集約する。
 - 生産ラボ第13～15段階の予想は、第11・12段階で一致した基準個数12→15（段階ごとに+3）と研究構成を延長する。基準個数を `q` とすると、感性コア11q、金の匙10q、徹夜アイマスク10q、キャラのハンコ16q。最終素材・中間素材を含む式は `scripts/validate-research-forecasts.py` で検証し、未解放段階の研究効果・費用・時間は予想しない。
+- 生産ラボ第10～12段階の素材クラフト計算機は、上位成果物から基礎素材へ展開する有向非巡回レシピとして `docs/javascripts/research-calculator-core.js` に一元化する。現在庫は各階層の需要から先に差し引き、第10段階プリセットだけは研究で直接消費する中間生成物（地球から来た鉛・基板・柔らか金属・曲がった針金・LED電球）も加算する。入力は保存・送信しない。

@@ -49,6 +49,7 @@ RESEARCH_ITEM_ALIASES = {
     "S電子半導体": ("S字半導体",),
     "睡眠アイマスク": (),
     "バッテリーパック": (),
+    "LED電球": (),
     "MUSIMチップ": (),
     "徹夜アイマスク": (),
     "感性コア": (),
@@ -232,7 +233,7 @@ def main() -> None:
         "apostles": 82,
         "artifact_cards": 52,
         "spell_cards": 36,
-        "research_items": 22,
+        "research_items": 23,
     }
     actual_counts = {
         "apostles": len(apostles),

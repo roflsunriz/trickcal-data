@@ -164,3 +164,178 @@
   color: var(--md-default-fg-color--light);
   font-size: 0.86em;
 }
+
+.md-typeset .research-calculator {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset .research-calculator__description,
+.md-typeset .research-calculator__hint {
+  margin: 0 0 0.75rem;
+}
+
+.md-typeset .research-calculator__hint {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85em;
+}
+
+.md-typeset .research-calculator__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset .research-calculator__button {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.35rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.md-typeset .research-calculator__button:hover,
+.md-typeset .research-calculator__button:focus-visible {
+  filter: brightness(1.08);
+}
+
+.md-typeset .research-calculator__button.is-current {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+.md-typeset .research-calculator__button.is-secondary {
+  background: transparent;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .research-calculator__inputs {
+  margin: 0.6rem 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .research-calculator__inputs > summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.md-typeset .research-calculator__inputs[open] > summary {
+  margin-bottom: 0.65rem;
+}
+
+.md-typeset .research-calculator__table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.md-typeset .research-calculator__table {
+  width: 100%;
+  min-width: 30rem;
+  border-collapse: collapse;
+  font-size: 0.86em;
+}
+
+.md-typeset .research-calculator__result-table {
+  min-width: 40rem;
+}
+
+.md-typeset .research-calculator__table th,
+.md-typeset .research-calculator__table td {
+  padding: 0.45rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: middle;
+}
+
+.md-typeset .research-calculator__table thead th {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+  text-align: center;
+}
+
+.md-typeset .research-calculator__table tbody th {
+  min-width: 10rem;
+  text-align: left;
+}
+
+.md-typeset .research-calculator__table td:not(:first-child) {
+  text-align: right;
+}
+
+.md-typeset .research-calculator__input {
+  width: 8rem;
+  max-width: 100%;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  text-align: right;
+}
+
+.md-typeset .research-calculator__input:focus-visible {
+  border-color: var(--md-accent-fg-color);
+  outline: 2px solid color-mix(in srgb, var(--md-accent-fg-color) 35%, transparent);
+}
+
+.md-typeset .research-calculator__input[aria-invalid="true"] {
+  border-color: #c62828;
+}
+
+.md-typeset .research-calculator__results h4 {
+  margin: 1.1rem 0 0.45rem;
+}
+
+.md-typeset .research-calculator__errors {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.md-typeset .research-calculator__summary {
+  margin: 0.75rem 0 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.35rem;
+  font-weight: 700;
+}
+
+.md-typeset .research-calculator__summary.is-short {
+  background: color-mix(in srgb, #c62828 14%, transparent);
+  color: #b71c1c;
+}
+
+.md-typeset .research-calculator__summary.is-ready {
+  background: color-mix(in srgb, #2e7d32 14%, transparent);
+  color: #1b5e20;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .research-calculator__summary.is-short {
+  color: #ffb4ab;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .research-calculator__summary.is-ready {
+  color: #a5d6a7;
+}
+
+@media (max-width: 600px) {
+  .md-typeset .research-calculator {
+    padding: 0.7rem;
+  }
+
+  .md-typeset .research-calculator__controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md-typeset .research-calculator__button {
+    width: 100%;
+  }
+}
