@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 
@@ -31,6 +32,7 @@ CARD_NAME_FIXES = {
     "性格カ一ド【狂気】": "性格カード【狂気】",
     "癒しのペンダント": "癒やしのペンダント",
 }
+EMPTY_COUNT_RE = re.compile(r'data-empty-count="(\d+)"')
 
 
 def read_manifest() -> dict[str, object]:
@@ -61,7 +63,7 @@ def enrich_bio_page(
     apostles: dict[str, dict[str, str]],
 ) -> None:
     lines = path.read_text(encoding="utf-8").splitlines()
-    output: list[str] = []
+    enriched: list[str] = []
     for line in lines:
         cells = line.split("|")
         if (
@@ -75,8 +77,64 @@ def enrich_bio_page(
             name = cells[1].strip()
             cells[1] = f" {apostle_label(name, apostles)} "
             line = "|".join(cells)
-        output.append(line.rstrip())
+        enriched.append(line.rstrip())
+    output = collapse_empty_bio_rows(enriched)
     path.write_text("\n".join(output) + "\n", encoding="utf-8")
+
+
+def empty_details(count: int) -> str:
+    items = "".join(
+        "<li>セリフ・判定とも未記入</li>"
+        for _ in range(count)
+    )
+    return (
+        f'<details class="empty-entry-details" data-empty-count="{count}">'
+        f"<summary>未記入枠 {count}件</summary>"
+        f'<ol class="empty-entry-list">{items}</ol></details>'
+    )
+
+
+def collapse_empty_bio_rows(lines: list[str]) -> list[str]:
+    output: list[str] = []
+    current_label = ""
+    empty_count = 0
+
+    def flush_empty_rows() -> None:
+        nonlocal empty_count
+        if empty_count:
+            output.append(
+                f"| {current_label} | {empty_details(empty_count)} |  |"
+            )
+            empty_count = 0
+
+    for line in lines:
+        cells = line.split("|")
+        is_character_row = (
+            line.startswith("|")
+            and len(cells) >= 5
+            and "apostle-label" in cells[1]
+        )
+        if not is_character_row:
+            flush_empty_rows()
+            current_label = ""
+            output.append(line)
+            continue
+
+        label = cells[1].strip()
+        if current_label and label != current_label:
+            flush_empty_rows()
+        current_label = label
+
+        existing_count = EMPTY_COUNT_RE.search(cells[2])
+        if existing_count is not None:
+            empty_count += int(existing_count.group(1))
+        elif not cells[2].strip() and not cells[3].strip():
+            empty_count += 1
+        else:
+            output.append(line)
+
+    flush_empty_rows()
+    return output
 
 
 def enrich_formation_page(

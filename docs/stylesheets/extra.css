@@ -120,3 +120,47 @@
 .md-typeset table:has(.card-thumbnail) {
   min-width: 90rem;
 }
+
+.md-typeset .lab-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+
+.md-typeset .lab-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.md-typeset .lab-icon img {
+  position: absolute;
+  top: var(--lab-icon-y);
+  left: var(--lab-icon-x);
+  width: 104px;
+  height: 104px;
+  max-width: none;
+}
+
+.md-typeset .empty-entry-details summary {
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.md-typeset .empty-entry-details[open] summary {
+  margin-bottom: 0.35rem;
+}
+
+.md-typeset .empty-entry-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.86em;
+}

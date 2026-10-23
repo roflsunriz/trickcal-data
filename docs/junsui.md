@@ -7,128 +7,48 @@
 | <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> | クッキーばかり食べているせいか頭が痛い。              | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> | わらわもサボりたい…                        | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> | うぅ。もらったものを完食したらくしゃみが…             | 重金属中毒 |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/erpin.webp" alt="" loading="lazy">エルフィン</span> | <details class="empty-entry-details" data-empty-count="5"><summary>未記入枠 5件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> | …くしゅん!(口を覆う)…                     | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> | 外に…出た…頭痛い…                        | 栄養過多  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> | …くしゅ!                             | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> | 地の精霊たち…遊んで…ヘックション！…               | 重金属中毒 |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/gabia.webp" alt="" loading="lazy">ガヴィア</span> | <details class="empty-entry-details" data-empty-count="6"><summary>未記入枠 6件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | ビッグウッド…会いたかった?                    | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | 枝を揺らしすぎた。                         | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | うう…果実を育てるために…頑張る …う…             | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | 頭…頭が重い!実が育ちすぎた!                   | 栄養過多  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | はーくしょん！果実落ちて嫌…                    | 風邪    |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/bigwood.webp" alt="" loading="lazy">ビッグウッド</span> | <details class="empty-entry-details" data-empty-count="5"><summary>未記入枠 5件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | 頭痛が止まりません。                        | 重金属中毒 |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | 頭痛が止まりません。                        | 栄養過多  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | 咳が鎮圧できないっす……ハックシュン!               | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | 今日はいつもよりヘルメットが重すぎるっす…。            | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | 頭がぼーっとしてまぶたが重いっすね……。              | 栄養過多  |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/allet.webp" alt="" loading="lazy">アレット</span> | <details class="empty-entry-details" data-empty-count="5"><summary>未記入枠 5件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/kyuri.webp" alt="" loading="lazy">キュウイ</span> | <details class="empty-entry-details" data-empty-count="10"><summary>未記入枠 10件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> | 今日もお仕事頑張ってるのね!カッコいい!             | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> | ああ、昨日から何も食べてないの。                  | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> | あれ？昼ごはんをたくさん食べたのに…                | 栄養過多  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> | ゲホッ！ゲホッ！友達に…                      | 風邪    |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/sari.webp" alt="" loading="lazy">サリー</span> | <details class="empty-entry-details" data-empty-count="6"><summary>未記入枠 6件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> | ヘックション!う…風邪じゃないから…ルードより私のほうが健康だし… | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> | めまいがする…歩くとぐるぐる回ってるみたい～!          | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> | 洞窟から蒸気が出ていて…                      | 重金属中毒 |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> | 序列のまんまの病気                         | お帰りを  |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/silphir.webp" alt="" loading="lazy">シルフィール</span> | <details class="empty-entry-details" data-empty-count="6"><summary>未記入枠 6件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> | ネルも他の使徒たちみたいに診断書が欲しい～!            | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> | ネルが咳しています～!コホッ!コホッ!               | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> | うう…エスピーがくれたキャンディを食べたら頭が…          |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/speaki.webp" alt="" loading="lazy">スピッキー</span> | <details class="empty-entry-details" data-empty-count="7"><summary>未記入枠 7件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/naia.webp" alt="" loading="lazy">ナイア</span> | <details class="empty-entry-details" data-empty-count="10"><summary>未記入枠 10件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> | ヘックション!ヘックション!なんでこんなにくしゃみが出るんだろう? | お帰りを  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> | クシュッ!最近、寒いからだと思います…               | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> | 最近なんでこんなにめまいがするんだろう…グルグル回る気がします。  | 栄養不足  |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/mago.webp" alt="" loading="lazy">マーゴ</span> | <details class="empty-entry-details" data-empty-count="7"><summary>未記入枠 7件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> | ゴホッ、ゴホッ。夜間パトロール任務の後から、ずっと咳が…      | 風邪    |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> | 最近力が出なくて、クラクラして…                  | 栄養不足  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> | うぅ…昼食を食べたら頭がとても痛いです…              | 栄養過多  |
 | <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> | 市長さんが私に言ったのですが言うことを聞きすぎる…         | お帰りを  |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
-| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> |                                   |       |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/rohne.webp" alt="" loading="lazy">ローネ</span> | <details class="empty-entry-details" data-empty-count="6"><summary>未記入枠 6件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/vivi.webp" alt="" loading="lazy">ヴィヴィ</span> | <details class="empty-entry-details" data-empty-count="10"><summary>未記入枠 10件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |
+| <span class="apostle-label personality-pure"><img src="assets/apostles/haley.webp" alt="" loading="lazy">ヘイリー</span> | <details class="empty-entry-details" data-empty-count="10"><summary>未記入枠 10件</summary><ol class="empty-entry-list"><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li><li>セリフ・判定とも未記入</li></ol></details> |  |

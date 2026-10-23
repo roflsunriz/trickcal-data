@@ -3,7 +3,8 @@
   "sources": {
     "apostles": "https://wikiwiki.jp/thetrickal/%E4%BD%BF%E5%BE%92%E4%B8%80%E8%A6%A7",
     "artifact_cards": "https://wikiwiki.jp/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89",
-    "spell_cards": "https://wikiwiki.jp/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89"
+    "spell_cards": "https://wikiwiki.jp/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89",
+    "research_lab": "https://wikiwiki.jp/thetrickal/%E7%94%9F%E7%94%A3%E3%83%A9%E3%83%9C"
   },
   "apostles": [
     {
@@ -941,6 +942,190 @@
       "name": "イチゴ味カプセル",
       "file": "cards/spells/イチゴ味カプセル.webp",
       "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A4%E3%83%81%E3%82%B4%E5%91%B3%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB.webp?rev=ce35a8ff38595534ab71c08c9fe56c06&t=20250807181919"
+    }
+  ],
+  "research_items": [
+    {
+      "name": "地球から来た鉛",
+      "aliases": [],
+      "file": "research/icon-sheet-10.webp",
+      "x": -79,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:10?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "サラサラの鉄粉",
+      "aliases": [
+        "サラサラな鉄粉"
+      ],
+      "file": "research/icon-sheet-8.webp",
+      "x": -53,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:8?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "バラバラの基板",
+      "aliases": [
+        "基板"
+      ],
+      "file": "research/icon-sheet-11.webp",
+      "x": -1,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "パリパリの金箔",
+      "aliases": [],
+      "file": "research/icon-sheet-8.webp",
+      "x": -79,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:8?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "柔らか金属",
+      "aliases": [],
+      "file": "research/icon-sheet-11.webp",
+      "x": -27,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "再生プラスチック",
+      "aliases": [],
+      "file": "research/icon-sheet-8.webp",
+      "x": -1,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:8?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "曲がった針金",
+      "aliases": [],
+      "file": "research/icon-sheet-11.webp",
+      "x": -1,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "銅の匙",
+      "aliases": [],
+      "file": "research/icon-sheet-9.webp",
+      "x": -1,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:9?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "S電子半導体",
+      "aliases": [
+        "S字半導体"
+      ],
+      "file": "research/icon-sheet-11.webp",
+      "x": -1,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "睡眠アイマスク",
+      "aliases": [],
+      "file": "research/icon-sheet-9.webp",
+      "x": -79,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:9?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "バッテリーパック",
+      "aliases": [],
+      "file": "research/icon-sheet-11.webp",
+      "x": -27,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "MUSIMチップ",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -27,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "徹夜アイマスク",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -79,
+      "y": -53,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "感性コア",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -1,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "金の匙",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -53,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "キャラのハンコ",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -27,
+      "y": -79,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "こねこね粘土",
+      "aliases": [],
+      "file": "research/icon-sheet-12.webp",
+      "x": -53,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:12?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "EGOブロック",
+      "aliases": [],
+      "file": "research/icon-sheet-11.webp",
+      "x": -79,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "やわらか粘土",
+      "aliases": [],
+      "file": "research/icon-sheet-8.webp",
+      "x": -53,
+      "y": -53,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:8?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "曲がったもの",
+      "aliases": [],
+      "file": "research/icon-sheet-9.webp",
+      "x": -27,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:9?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "手形",
+      "aliases": [],
+      "file": "research/icon-sheet-11.webp",
+      "x": -53,
+      "y": -1,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:11?rev=3f7b397011f608ee8c9bdb33f12d279f"
+    },
+    {
+      "name": "固い石",
+      "aliases": [],
+      "file": "research/icon-sheet-8.webp",
+      "x": -27,
+      "y": -27,
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/::icon/24:8?rev=3f7b397011f608ee8c9bdb33f12d279f"
     }
   ]
 }

@@ -4,53 +4,53 @@
 
 | 素材 | 前提式 |
 | --- | --- |
-| 感性コア 1個 | MUSIMチップ 1個 + 柔らか金属 3個 |
-| MUSIMチップ 1個 | 基板 2個 + サラサラな鉄粉 1個 |
-| 基板 1個 | パリパリの金箔 3個 |
-| 金の匙 1個 | バッテリーパック 1個 + 曲がった針金 3個 |
-| バッテリーパック 1個 | 柔らか金属 2個 + サラサラな鉄粉 1個 |
-| 柔らか金属 1個 | 再生プラスチック 3個 |
-| 曲がった針金 1個 | 銅の匙 3個 |
-| 徹夜アイマスク 1個 | S字半導体 1個 + 地球から来た鉛 3個 |
-| S字半導体 1個 | 地球から来た鉛 2個 + 睡眠アイマスク 1個 |
-| 地球から来た鉛 1個 | サラサラな鉄粉 3個 |
+| <span class="lab-item" data-lab-item="感性コア"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>感性コア</span> 1個 | <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span> 1個 + <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> 3個 |
+| <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span> 1個 | <span class="lab-item" data-lab-item="基板"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-1px"></span>基板</span> 2個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1個 |
+| <span class="lab-item" data-lab-item="基板"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-1px"></span>基板</span> 1個 | <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> 3個 |
+| <span class="lab-item" data-lab-item="金の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-79px"></span>金の匙</span> 1個 | <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span> 1個 + <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> 3個 |
+| <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span> 1個 | <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> 2個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1個 |
+| <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> 1個 | <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 3個 |
+| <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> 1個 | <span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> 3個 |
+| <span class="lab-item" data-lab-item="徹夜アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-53px"></span>徹夜アイマスク</span> 1個 | <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span> 1個 + <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 3個 |
+| <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span> 1個 | <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 2個 + <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> 1個 |
+| <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 1個 | <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 3個 |
 
 ## 1個あたりの最終換算
 
 | 素材 | 最終換算 |
 | --- | --- |
-| 感性コア 1個 | パリパリの金箔 6個 + サラサラな鉄粉 1個 + 再生プラスチック 9個 |
-| 金の匙 1個 | 再生プラスチック 6個 + サラサラな鉄粉 1個 + 銅の匙 9個 |
-| 徹夜アイマスク 1個 | サラサラな鉄粉 15個 + 睡眠アイマスク 1個 |
+| <span class="lab-item" data-lab-item="感性コア"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>感性コア</span> 1個 | <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> 6個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1個 + <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 9個 |
+| <span class="lab-item" data-lab-item="金の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-79px"></span>金の匙</span> 1個 | <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 6個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1個 + <span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> 9個 |
+| <span class="lab-item" data-lab-item="徹夜アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-53px"></span>徹夜アイマスク</span> 1個 | <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 15個 + <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> 1個 |
 
 ## 第13段階の素材数量
 
 | 素材 | 必要数 | 作成に必要な中間素材 | 換算メモ |
 | --- | ---: | --- | --- |
-| 感性コア | 176個 | MUSIMチップ 176個 / 柔らか金属 528個 | MUSIMチップ176個はパリパリの金箔 1,056個 + サラサラな鉄粉 176個分。柔らか金属528個は再生プラスチック 1,584個分。 |
-| 金の匙 | 176個 | バッテリーパック 176個 / 曲がった針金 528個 | バッテリーパック176個は再生プラスチック 1,056個 + サラサラな鉄粉 176個分。曲がった針金528個は銅の匙 1,584個分。 |
-| 徹夜アイマスク | 88個 | S字半導体 88個 / 地球から来た鉛 264個 | S字半導体88個の作成に地球から来た鉛 176個 + 睡眠アイマスク 88個が必要。地球から来た鉛は合計440個。 |
+| <span class="lab-item" data-lab-item="感性コア"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>感性コア</span> | 176個 | <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span> 176個 / <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> 528個 | <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span>176個は<span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> 1,056個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 176個分。<span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span>528個は<span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 1,584個分。 |
+| <span class="lab-item" data-lab-item="金の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-79px"></span>金の匙</span> | 176個 | <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span> 176個 / <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> 528個 | <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span>176個は<span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 1,056個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 176個分。<span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span>528個は<span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> 1,584個分。 |
+| <span class="lab-item" data-lab-item="徹夜アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-53px"></span>徹夜アイマスク</span> | 88個 | <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span> 88個 / <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 264個 | <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span>88個の作成に<span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 176個 + <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> 88個が必要。<span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span>は合計440個。 |
 
 ## 最終換算
 
 | 素材 | 数量 |
 | --- | ---: |
-| サラサラな鉄粉 | 1,672個 |
-| パリパリの金箔 | 1,056個 |
-| 再生プラスチック | 2,640個 |
-| 銅の匙 | 1,584個 |
-| 睡眠アイマスク | 88個 |
+| <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> | 1,672個 |
+| <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> | 1,056個 |
+| <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> | 2,640個 |
+| <span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> | 1,584個 |
+| <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> | 88個 |
 
 ## 中間素材の必要数
 
 | 中間素材 | 必要数 | 最終素材換算 |
 | --- | ---: | --- |
-| MUSIMチップ | 176個 | パリパリの金箔 1,056個 + サラサラな鉄粉 176個 |
-| 柔らか金属 | 880個 | 再生プラスチック 2,640個 |
-| バッテリーパック | 176個 | 再生プラスチック 1,056個 + サラサラな鉄粉 176個 |
-| 曲がった針金 | 528個 | 銅の匙 1,584個 |
-| 地球から来た鉛 | 440個 | サラサラな鉄粉 1,320個 |
-| S字半導体 | 88個 | サラサラな鉄粉 528個 + 睡眠アイマスク 88個 |
+| <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span> | 176個 | <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> 1,056個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 176個 |
+| <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> | 880個 | <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 2,640個 |
+| <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span> | 176個 | <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 1,056個 + <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 176個 |
+| <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> | 528個 | <span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> 1,584個 |
+| <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> | 440個 | <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1,320個 |
+| <span class="lab-item" data-lab-item="S字半導体"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>S字半導体</span> | 88個 | <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 528個 + <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> 88個 |
 
 ## 月間教団素材パック3で中間素材を埋める場合
 
@@ -61,25 +61,25 @@
 
 | 獲得アイテム | 個数 | 換算内容 |
 | --- | ---: | --- |
-| MUSIMチップ | 180個 | パリパリの金箔 1,080個分 / サラサラな鉄粉 180個分 |
-| バッテリーパック | 180個 | 再生プラスチック 1,080個分 / サラサラな鉄粉 180個分 |
-| 徹夜アイマスク | 90個 | 地球から来た鉛 450個分 / サラサラな鉄粉 1,350個分 / 睡眠アイマスク 90個分 |
+| <span class="lab-item" data-lab-item="MUSIMチップ"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>MUSIMチップ</span> | 180個 | <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> 1,080個分 / <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 180個分 |
+| <span class="lab-item" data-lab-item="バッテリーパック"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-79px"></span>バッテリーパック</span> | 180個 | <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> 1,080個分 / <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 180個分 |
+| <span class="lab-item" data-lab-item="徹夜アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-12.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-53px"></span>徹夜アイマスク</span> | 90個 | <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> 450個分 / <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> 1,350個分 / <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> 90個分 |
 
 | 購入後の残り | 数量 |
 | --- | ---: |
-| サラサラな鉄粉 | 0個（38個分超過） |
-| パリパリの金箔 | 0個（24個分超過） |
-| 再生プラスチック | 1,560個 |
-| 銅の匙 | 1,584個 |
-| 睡眠アイマスク | 0個（2個分超過） |
+| <span class="lab-item" data-lab-item="サラサラな鉄粉"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-53px;--lab-icon-y:-27px"></span>サラサラな鉄粉</span> | 0個（38個分超過） |
+| <span class="lab-item" data-lab-item="パリパリの金箔"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-27px"></span>パリパリの金箔</span> | 0個（24個分超過） |
+| <span class="lab-item" data-lab-item="再生プラスチック"><span class="lab-icon"><img src="assets/research/icon-sheet-8.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-79px"></span>再生プラスチック</span> | 1,560個 |
+| <span class="lab-item" data-lab-item="銅の匙"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>銅の匙</span> | 1,584個 |
+| <span class="lab-item" data-lab-item="睡眠アイマスク"><span class="lab-icon"><img src="assets/research/icon-sheet-9.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-1px"></span>睡眠アイマスク</span> | 0個（2個分超過） |
 
 ## 残り素材を月間教団素材パック2で埋める場合
 
 | 不足素材 | 必要数 | 1パックあたり換算 | 必要購入数 |
 | --- | ---: | ---: | ---: |
-| 柔らか金属 | 520個 | 30個 | 18個以上 |
-| 曲がった針金 | 528個 | 10個 | 53個以上 |
-| 地球から来た鉛 | 0個 | 30個 | 0個 |
+| <span class="lab-item" data-lab-item="柔らか金属"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-27px;--lab-icon-y:-1px"></span>柔らか金属</span> | 520個 | 30個 | 18個以上 |
+| <span class="lab-item" data-lab-item="曲がった針金"><span class="lab-icon"><img src="assets/research/icon-sheet-11.webp" alt="" loading="lazy" style="--lab-icon-x:-1px;--lab-icon-y:-27px"></span>曲がった針金</span> | 528個 | 10個 | 53個以上 |
+| <span class="lab-item" data-lab-item="地球から来た鉛"><span class="lab-icon"><img src="assets/research/icon-sheet-10.webp" alt="" loading="lazy" style="--lab-icon-x:-79px;--lab-icon-y:-79px"></span>地球から来た鉛</span> | 0個 | 30個 | 0個 |
 
 | 項目 | 内容 |
 | --- | --- |

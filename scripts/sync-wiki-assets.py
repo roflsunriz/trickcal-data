@@ -27,10 +27,39 @@ SOURCES = {
         "%E3%82%AB%E3%83%BC%E3%83%89/"
         "%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89"
     ),
+    "research_lab": (
+        "https://wikiwiki.jp/thetrickal/"
+        "%E7%94%9F%E7%94%A3%E3%83%A9%E3%83%9C"
+    ),
 }
 
 CARD_NAME_ALIASES = {
     "ルシ ‐ イードドリーム": "ルシ・イードドリーム",
+}
+
+RESEARCH_ITEM_ALIASES = {
+    "地球から来た鉛": (),
+    "サラサラの鉄粉": ("サラサラな鉄粉",),
+    "バラバラの基板": ("基板",),
+    "パリパリの金箔": (),
+    "柔らか金属": (),
+    "再生プラスチック": (),
+    "曲がった針金": (),
+    "銅の匙": (),
+    "S電子半導体": ("S字半導体",),
+    "睡眠アイマスク": (),
+    "バッテリーパック": (),
+    "MUSIMチップ": (),
+    "徹夜アイマスク": (),
+    "感性コア": (),
+    "金の匙": (),
+    "キャラのハンコ": (),
+    "こねこね粘土": (),
+    "EGOブロック": (),
+    "やわらか粘土": (),
+    "曲がったもの": (),
+    "手形": (),
+    "固い石": (),
 }
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -128,6 +157,42 @@ def parse_cards(page: str, directory: str) -> list[dict[str, str]]:
     return cards
 
 
+def parse_research_items(page: str) -> list[dict[str, object]]:
+    items: dict[str, dict[str, object]] = {}
+    for tag in IMG_RE.findall(page):
+        image = attrs(tag)
+        name = image.get("alt", "")
+        source_url = image.get("src", "")
+        style = image.get("style", "")
+        if name not in RESEARCH_ITEM_ALIASES or "::icon/24:" not in source_url:
+            continue
+        sheet_match = re.search(r"::icon/24:(\d+)", source_url)
+        position_match = re.search(
+            r"left:\s*(-?\d+)px;\s*top:\s*(-?\d+)px",
+            style,
+        )
+        if sheet_match is None or position_match is None:
+            raise RuntimeError(f"研究素材アイコンの位置を取得できません: {name}")
+        sheet = sheet_match.group(1)
+        entry = {
+            "name": name,
+            "aliases": list(RESEARCH_ITEM_ALIASES[name]),
+            "file": f"research/icon-sheet-{sheet}.webp",
+            "x": int(position_match.group(1)),
+            "y": int(position_match.group(2)),
+            "source_url": source_url,
+        }
+        previous = items.get(name)
+        if previous is not None and previous != entry:
+            raise RuntimeError(f"研究素材アイコンの定義が重複しています: {name}")
+        items[name] = entry
+
+    missing = set(RESEARCH_ITEM_ALIASES) - set(items)
+    if missing:
+        raise RuntimeError(f"研究素材アイコンが見つかりません: {sorted(missing)}")
+    return [items[name] for name in RESEARCH_ITEM_ALIASES]
+
+
 def save_webp(relative_path: str, source_url: str) -> None:
     target = ASSETS_DIR / Path(relative_path)
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -142,12 +207,17 @@ def save_webp(relative_path: str, source_url: str) -> None:
     target.write_bytes(data)
 
 
-def validate_unique(entries: list[dict[str, str]], kind: str) -> None:
+def validate_unique(
+    entries: list[dict[str, object]],
+    kind: str,
+    *,
+    allow_shared_files: bool = False,
+) -> None:
     names = [entry["name"] for entry in entries]
     files = [entry["file"] for entry in entries]
     if len(names) != len(set(names)):
         raise RuntimeError(f"{kind}の名前が重複しています")
-    if len(files) != len(set(files)):
+    if not allow_shared_files and len(files) != len(set(files)):
         raise RuntimeError(f"{kind}の保存先が重複しています")
 
 
@@ -156,16 +226,19 @@ def main() -> None:
     apostles = parse_apostles(pages["apostles"])
     artifact_cards = parse_cards(pages["artifact_cards"], "artifacts")
     spell_cards = parse_cards(pages["spell_cards"], "spells")
+    research_items = parse_research_items(pages["research_lab"])
 
     expected_counts = {
         "apostles": 82,
         "artifact_cards": 52,
         "spell_cards": 36,
+        "research_items": 22,
     }
     actual_counts = {
         "apostles": len(apostles),
         "artifact_cards": len(artifact_cards),
         "spell_cards": len(spell_cards),
+        "research_items": len(research_items),
     }
     if actual_counts != expected_counts:
         raise RuntimeError(
@@ -176,15 +249,25 @@ def main() -> None:
     validate_unique(apostles, "使徒")
     validate_unique(artifact_cards, "遺物カード")
     validate_unique(spell_cards, "スペルカード")
+    validate_unique(research_items, "研究素材", allow_shared_files=True)
 
     groups = {
         "apostles": apostles,
         "artifact_cards": artifact_cards,
         "spell_cards": spell_cards,
+        "research_items": research_items,
     }
-    for entries in groups.values():
+    for group_name in ("apostles", "artifact_cards", "spell_cards"):
+        entries = groups[group_name]
         for entry in entries:
             save_webp(entry["file"], entry["source_url"])
+
+    research_sheets = {
+        entry["file"]: entry["source_url"]
+        for entry in research_items
+    }
+    for relative_path, source_url in research_sheets.items():
+        save_webp(relative_path, source_url)
 
     manifest = {
         "retrieved_at": RETRIEVED_AT,
@@ -199,7 +282,7 @@ def main() -> None:
     print(
         "同期完了: "
         f"使徒 {len(apostles)}名、遺物 {len(artifact_cards)}枚、"
-        f"スペル {len(spell_cards)}枚"
+        f"スペル {len(spell_cards)}枚、研究素材 {len(research_items)}種"
     )
 
 

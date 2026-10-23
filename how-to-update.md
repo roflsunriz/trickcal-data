@@ -9,9 +9,11 @@
 
 ## ゲーム画像とカード一覧の更新
 
-使徒・遺物カード・スペルカードの画像は、`python scripts/sync-wiki-assets.py` で攻略Wikiから `docs/assets/` へ保存する。取得元URLと取得日は `docs/assets/game-assets.json` に記録される。スクリプトが件数差で停止した場合は、攻略Wikiで追加・削除・DOM変更を確認し、期待件数とカード文字起こしを同時に更新する。画像を同期した後、`python scripts/enrich-doc-tables.py` で攻略表の使徒ラベルとカード表の画像列を更新する。
+使徒・遺物カード・スペルカード・生産ラボ素材の画像は、`python scripts/sync-wiki-assets.py` で攻略Wikiから `docs/assets/` へ保存する。取得元URLと取得日は `docs/assets/game-assets.json` に記録される。スクリプトが件数差で停止した場合は、攻略Wikiで追加・削除・DOM変更を確認し、期待件数とカード文字起こしを同時に更新する。
 
-同期後は、全画像がWebP本体であること、Markdownの `src` がローカル画像を指すこと、使徒名・性格・カード名の対応に欠落がないことを検査し、`python scripts/build-docs.py` で表示を確認する。問題があれば変更コミットをrevertする。攻略Wikiから削除された画像はスクリプトが自動削除しないため、マニフェストとの差分を確認してから個別に整理する。
+画像を同期した後、`python scripts/enrich-doc-tables.py` で攻略表の使徒ラベル、空欄アコーディオン、カード表の画像列を更新する。続けて `python scripts/enrich-research-tables.py` を実行し、生産ラボ第10～15段階の材料・中間素材・加工成果物へ画像を付ける。
+
+同期後は、全画像がWebP本体であること、Markdownの `src` がローカル画像を指すこと、使徒名・性格・カード名・研究素材名の対応に欠落がないことを検査し、`python scripts/build-docs.py` で表示を確認する。問題があれば変更コミットをrevertする。攻略Wikiから削除された画像はスクリプトが自動削除しないため、マニフェストとの差分を確認してから個別に整理する。
 
 ## Dependabot PR の更新
 
