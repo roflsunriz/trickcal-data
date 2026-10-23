@@ -6,9 +6,15 @@
 
 ## [Unreleased]
 
+### Added
+
+- バイオデンジャー攻略と使徒編成表で使徒を見分けられるよう、実装済み使徒82名の顔画像をローカルアセットとして追加し、既存名を性格色付きラベルにした。
+- 遺物カード52枚とスペルカード36枚の画像をローカルアセットとして追加し、新規遺物13枚・新規スペル3枚の文字起こしを追加した。
+
 ### Changed
 
-
+- 解放済みの生産ラボ第11・12段階について、予想値を研究内容・時間・必要素材の正式な実データへ置き換えた。
+- 画像の取得元と取得日を追跡し、Wiki更新時にWebP本体と表の表示を再同期できるスクリプトと更新手順を追加した。
 
 - GitHub Actions の月間利用時間を抑えるため、Dependabot version update と自動マージを毎週・即時処理から毎月28日（Asia/Tokyo）の月末一括処理へ変更した。
 
@@ -17,13 +23,11 @@
 
 - 各ページの Git 最終更新日とサイト外観を維持して公開できるよう、MkDocs Material から Zensical の classic テーマへ移行した。
 
+- Pages デプロイの保守性を保つため、利用アクションを最新メジャーへ更新した（checkout v4→v7、setup-python v5→v7、upload-pages-artifact v3→v5、deploy-pages v4→v5）。
+- 依存更新を安全に省力化するため、Dependabot の patch／minor PR を既存 CI の全チェック成功後に自動取り込みし、失敗ジョブを一度再実行する設定を追加した。
+- 作業開始時の共通指針見落としを防ぐため、調査やコマンド実行より前に `COMMON-AGENTS.md` を先頭から末尾まで読み、EOFを確認する必須ゲートを追加した。
+
 ### Fixed
 
 - CI と Dependabot の分類の実行順が前後しても更新を取りこぼさないよう、同じ PR 番号と head SHA を再照合する経路を追加した。
 - Git の取得履歴が浅いと MkDocs の更新日時プラグインが警告し、strict デプロイが停止するため、Pages の checkout で全履歴を取得するようにした。
-
-### Changed
-
-- Pages デプロイの保守性を保つため、利用アクションを最新メジャーへ更新した（checkout v4→v7、setup-python v5→v7、upload-pages-artifact v3→v5、deploy-pages v4→v5）。
-- 依存更新を安全に省力化するため、Dependabot の patch／minor PR を既存 CI の全チェック成功後に自動取り込みし、失敗ジョブを一度再実行する設定を追加した。
-- 作業開始時の共通指針見落としを防ぐため、調査やコマンド実行より前に `COMMON-AGENTS.md` を先頭から末尾まで読み、EOFを確認する必須ゲートを追加した。

@@ -4,7 +4,7 @@ site_description: |-
   - トリッカルの緊急！バイオデンジャー1号の攻略情報
   - トリッカルの文字起こし（遺物カードとスペルカード）
   - トリッカルのおすすめ使徒編成表
-  - トリッカルの研究室の生産ラボの情報（必要素材数と、第10段階以降の予想）
+  - トリッカルの研究室の生産ラボの情報（第12段階までの必要素材数と、第13段階以降の予想）
 site_url: https://roflsunriz.github.io/trickcal-data/
 
 theme:
@@ -49,8 +49,8 @@ nav:
   - 使徒編成表: apostle-formation-table.md
   - 研究室:
       - 生産ラボ 第10段階: research-stage-10.md
-      - 生産ラボ 第11段階（予想）: research-stage-11.md
-      - 生産ラボ 第12段階（予想）: research-stage-12.md
+      - 生産ラボ 第11段階: research-stage-11.md
+      - 生産ラボ 第12段階: research-stage-12.md
       - 生産ラボ 第13段階（予想）: research-stage-13.md
       - 生産ラボ 第14段階（予想）: research-stage-14.md
       - 生産ラボ 第15段階（予想）: research-stage-15.md

@@ -9,6 +9,7 @@ https://roflsunriz.github.io/trickcal-data/
 ## 内容
 
 - `docs/` に各カテゴリの台詞データを配置しています。
+- `docs/assets/` に使徒・遺物カード・スペルカードのローカル画像と取得元マニフェストを配置しています。
 - `mkdocs.yml` を Zensical で読み込み、Material と同じ classic 外観で閲覧できます。
 
 ## 閲覧方法
@@ -26,7 +27,7 @@ Zensicalが表示した URL をブラウザで開くと、各ページを確認�
 
 ## ライセンス
 
-このリポジトリのコードとドキュメントは MIT License の下で公開しています。詳細は [LICENSE](LICENSE) を参照してください。
+このリポジトリのコードと独自ドキュメントは MIT License の下で公開しています。詳細は [LICENSE](LICENSE) を参照してください。`docs/assets/apostles/` と `docs/assets/cards/` のゲーム画像は MIT License の対象外で、各権利者に帰属します。
 
 ## 貢献
 

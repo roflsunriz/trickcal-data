@@ -7,6 +7,12 @@
 
 `docs/` を編集したら、`python -m pip install -r requirements.txt` と `python scripts/build-docs.py` を実行し、`site/` のページと最終更新日を確認する。公開に問題が出た場合は変更コミットを revert し、Pages ワークフローを再実行する。
 
+## ゲーム画像とカード一覧の更新
+
+使徒・遺物カード・スペルカードの画像は、`python scripts/sync-wiki-assets.py` で攻略Wikiから `docs/assets/` へ保存する。取得元URLと取得日は `docs/assets/game-assets.json` に記録される。スクリプトが件数差で停止した場合は、攻略Wikiで追加・削除・DOM変更を確認し、期待件数とカード文字起こしを同時に更新する。画像を同期した後、`python scripts/enrich-doc-tables.py` で攻略表の使徒ラベルとカード表の画像列を更新する。
+
+同期後は、全画像がWebP本体であること、Markdownの `src` がローカル画像を指すこと、使徒名・性格・カード名の対応に欠落がないことを検査し、`python scripts/build-docs.py` で表示を確認する。問題があれば変更コミットをrevertする。攻略Wikiから削除された画像はスクリプトが自動削除しないため、マニフェストとの差分を確認してから個別に整理する。
+
 ## Dependabot PR の更新
 
 

@@ -10,5 +10,6 @@
 COMMON-AGENTS.md
 .zensical-build.yml
 zensical-docs-*/
+__pycache__/
 
 COMMON-AGENTS.md

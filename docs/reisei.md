@@ -2,133 +2,133 @@
 
 | キャラクター | セリフ                                      | 判定    |
 |--------|------------------------------------------|-------|
-| アメリア   | コホッ!どうですか?本当に体調が悪いでしょう?                  | お帰りを  |
-| アメリア   | あなた、医者の座を狙ってるんじゃありませんか?                  | お帰りを  |
-| アメリア   | 何をしているのですか?ゴホッ!ゴホッ…!早く診断してください!          | 風邪    |
-| アメリア   | めまいがひどいです。最近仕事が忙しいので早く診断してください!          | 栄養不足  |
-| アメリア   | 頭が…コーヒーをたくさん飲んではいますが…                    | 栄養過多  |
-| アメリア   |                                          |       |
-| アメリア   |                                          |       |
-| アメリア   |                                          |       |
-| アメリア   |                                          |       |
-| アメリア   |                                          |       |
-| エスピー   | どうでもいいけど、あんたはいつ寝るの?                      | お帰りを  |
-| エスピー   | う…頭が…3日連続の夢視聴チャ レンジは無理かも?                | 栄養不足  |
-| エスピー   | ヘックション!本当に…なんで暖房もつけずに寝るの?                | 風邪    |
-| エスピー   | ポップコーンを食べすぎた…                            | 栄養過多  |
-| エスピー   |                                          |       |
-| エスピー   |                                          |       |
-| エスピー   |                                          |       |
-| エスピー   |                                          |       |
-| エスピー   |                                          |       |
-| エスピー   |                                          |       |
-| エレナ    | アメリアが行けって言うから来たんだけど?                     | お帰りを  |
-| エレナ    | エルフの食べ物を食べ過ぎたせいが頭痛が…                     | 栄養過多  |
-| エレナ    | クシュン!昨日は少し寝不足だったかな?                      | お帰りを  |
-| エレナ    | ゴホッ…どうしてコーヒーを飲みたくならないんだろう?               | 風邪    |
-| エレナ    | 実験室にあるものを食べてから…                          | 重金属中毒 |
-| エレナ    |                                          |       |
-| エレナ    |                                          |       |
-| エレナ    |                                          |       |
-| エレナ    |                                          |       |
-| エレナ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| パトラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| ピコラ    |                                          |       |
-| メロナ    | こんにちは～。メロン食べますか?                         | お帰りを  |
-| メロナ    | ゴホッ。ああ…声の調子が良くない。                        | 風邪    |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| メロナ    |                                          |       |
-| アヤ     | もしかして私の助言が役に立つかしら?                       | お帰りを  |
-| アヤ     | 頭が痛いけど何が問題なのかわからないの。                     |       |
-| アヤ     | 最近、体がだるいの。頭がクラクラする。                      | 栄養不足  |
-| アヤ     | くしゅん！鼻がずっとムズムズするわ…                       | 風邪    |
-| アヤ     |                                          |       |
-| アヤ     |                                          |       |
-| アヤ     |                                          |       |
-| アヤ     |                                          |       |
-| アヤ     |                                          |       |
-| アヤ     |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| イード    |                                          |       |
-| シーラ    | 風の精霊たちが寒がったらどうすればいいんだ?                   | お帰りを  |
-| シーラ    | 最近、ゴホッ…!ほこりが多すぎる!                        | 重金属中毒 |
-| シーラ    | うるさい警報を止めないと…コホッ…上位精霊の力を見せてやる!           | 風邪    |
-| シーラ    | 息を吸うだけで頭が痛い。                             | 栄養不足  |
-| シーラ    | ゴホッゴホッ!北風を引き連れてるからか?                     |       |
-| シーラ    |                                          |       |
-| シーラ    |                                          |       |
-| シーラ    |                                          |       |
-| シーラ    |                                          |       |
-| シーラ    |                                          |       |
-| ジェイド   | ドローンに連れてこられたんだけど…ここはどこだ?                 | お帰りを  |
-| ジェイド   | クシュン!本で見たことがある。これは咳だろう?                  | 風邪    |
-| ジェイド   | 新作の翡翠石を食べたら頭痛がしてきた。                      | 重金属中毒 |
-| ジェイド   | 一週間本を読むのに飢えていた…                          | 栄養不足  |
-| ジェイド   |                                          |       |
-| ジェイド   |                                          |       |
-| ジェイド   |                                          |       |
-| ジェイド   |                                          |       |
-| ジェイド   |                                          |       |
-| ジェイド   |                                          |       |
-| フリックル  | ゴホッ!薄着すぎたかな?                             | 風邪    |
-| フリックル  | 最近ポテトチップスばかり食べているからか頭が痛い。                | 栄養不足  |
-| フリックル  | 日光を浴びろって言われたから来たんだけど?                    | お帰りを  |
-| フリックル  | ポーションを飲みすぎたのか頭が痛い…                       | 栄養過多  |
-| フリックル  |                                          |       |
-| フリックル  |                                          |       |
-| フリックル  |                                          |       |
-| フリックル  |                                          |       |
-| フリックル  |                                          |       |
-| フリックル  |                                          |       |
-| レイジー   | うう …… なんだか体が重い気がします。                     | 栄養過多  |
-| レイジー   | はあ …… 疲れた …… 。                           | お帰りを  |
-| レイジー   | ゲホゲホッ!病院に来るのはめんどくさかったのですが、クラクラしたので来ました。 | 風邪    |
-| レイジー   | ゲホッ!うぅ……頭がズキズキします。                       | 重金属中毒 |
-| レイジー   | うう、目が回ります。                               | 栄養不足  |
-| レイジー   | 仕事が多くてめまいがしますね。                          | お帰りを  |
-| レイジー   | ハックシュン！くしゃみが…                            | お帰りを  |
-| レイジー   |                                          |       |
-| レイジー   |                                          |       |
-| レイジー   |                                          |       |
-| ベルベット  | 鉄分を摂取しろというから斧を舐めたら…ゴホッ!                  | 重金属中毒 |
-| ベルベット  | ここに来ると健康に良いものをくれるらしいな?                   | お帰りを  |
-| ベルベット  | 日光を見たせいかくしゃみが止まらない…ヘックション!               | お帰りを  |
-| ベルベット  | うぅ…たんぱく質は十分…                             | 栄養不足  |
-| ベルベット  | 筋肉のサプリメントを…                              | 栄養過多  |
-| ベルベット  | 使っていなかった魔法を使おうと…                         | お帰りを  |
-| ベルベット  |                                          |       |
-| ベルベット  |                                          |       |
-| ベルベット  |                                          |       |
-| ベルベット  |                                          |       |	
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> | コホッ!どうですか?本当に体調が悪いでしょう?                  | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> | あなた、医者の座を狙ってるんじゃありませんか?                  | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> | 何をしているのですか?ゴホッ!ゴホッ…!早く診断してください!          | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> | めまいがひどいです。最近仕事が忙しいので早く診断してください!          | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> | 頭が…コーヒーをたくさん飲んではいますが…                    | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/amelia.webp" alt="" loading="lazy">アメリア</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> | どうでもいいけど、あんたはいつ寝るの?                      | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> | う…頭が…3日連続の夢視聴チャ レンジは無理かも?                | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> | ヘックション!本当に…なんで暖房もつけずに寝るの?                | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> | ポップコーンを食べすぎた…                            | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/espi.webp" alt="" loading="lazy">エスピー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> | アメリアが行けって言うから来たんだけど?                     | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> | エルフの食べ物を食べ過ぎたせいが頭痛が…                     | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> | クシュン!昨日は少し寝不足だったかな?                      | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> | ゴホッ…どうしてコーヒーを飲みたくならないんだろう?               | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> | 実験室にあるものを食べてから…                          | 重金属中毒 |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/elena.webp" alt="" loading="lazy">エレナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/patula.webp" alt="" loading="lazy">パトラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/picora.webp" alt="" loading="lazy">ピコラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> | こんにちは～。メロン食べますか?                         | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> | ゴホッ。ああ…声の調子が良くない。                        | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/meluna.webp" alt="" loading="lazy">メロナ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> | もしかして私の助言が役に立つかしら?                       | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> | 頭が痛いけど何が問題なのかわからないの。                     |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> | 最近、体がだるいの。頭がクラクラする。                      | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> | くしゅん！鼻がずっとムズムズするわ…                       | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/aya.webp" alt="" loading="lazy">アヤ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/ed.webp" alt="" loading="lazy">イード</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> | 風の精霊たちが寒がったらどうすればいいんだ?                   | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> | 最近、ゴホッ…!ほこりが多すぎる!                        | 重金属中毒 |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> | うるさい警報を止めないと…コホッ…上位精霊の力を見せてやる!           | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> | 息を吸うだけで頭が痛い。                             | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> | ゴホッゴホッ!北風を引き連れてるからか?                     |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/sylla.webp" alt="" loading="lazy">シーラ</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> | ドローンに連れてこられたんだけど…ここはどこだ?                 | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> | クシュン!本で見たことがある。これは咳だろう?                  | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> | 新作の翡翠石を食べたら頭痛がしてきた。                      | 重金属中毒 |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> | 一週間本を読むのに飢えていた…                          | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/jade.webp" alt="" loading="lazy">ジェイド</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> | ゴホッ!薄着すぎたかな?                             | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> | 最近ポテトチップスばかり食べているからか頭が痛い。                | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> | 日光を浴びろって言われたから来たんだけど?                    | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> | ポーションを飲みすぎたのか頭が痛い…                       | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/fricle.webp" alt="" loading="lazy">フリックル</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | うう …… なんだか体が重い気がします。                     | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | はあ …… 疲れた …… 。                           | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | ゲホゲホッ!病院に来るのはめんどくさかったのですが、クラクラしたので来ました。 | 風邪    |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | ゲホッ!うぅ……頭がズキズキします。                       | 重金属中毒 |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | うう、目が回ります。                               | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | 仕事が多くてめまいがしますね。                          | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> | ハックシュン！くしゃみが…                            | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/layze.webp" alt="" loading="lazy">レイジー</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | 鉄分を摂取しろというから斧を舐めたら…ゴホッ!                  | 重金属中毒 |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | ここに来ると健康に良いものをくれるらしいな?                   | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | 日光を見たせいかくしゃみが止まらない…ヘックション!               | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | うぅ…たんぱく質は十分…                             | 栄養不足  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | 筋肉のサプリメントを…                              | 栄養過多  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> | 使っていなかった魔法を使おうと…                         | お帰りを  |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> |                                          |       |
+| <span class="apostle-label personality-cool"><img src="assets/apostles/velvet.webp" alt="" loading="lazy">ベルベット</span> |                                          |       |

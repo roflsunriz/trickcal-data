@@ -32,3 +32,91 @@
 .md-typeset table:not([class]) th {
   vertical-align: top;
 }
+
+.md-typeset .apostle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.25rem;
+  padding: 0.12rem 0.5rem 0.12rem 0.15rem;
+  border: 1px solid rgba(31, 41, 55, 0.16);
+  border-radius: 999px;
+  color: #1f2937;
+  font-weight: 600;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.md-typeset .apostle-label img {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.md-typeset .personality-pure {
+  background: #dff7dc;
+}
+
+.md-typeset .personality-cool {
+  background: #dff3ff;
+}
+
+.md-typeset .personality-madness {
+  background: #ffe0e5;
+}
+
+.md-typeset .personality-lively {
+  background: #fff2b8;
+}
+
+.md-typeset .personality-gloomy {
+  background: #e8e1ff;
+}
+
+.md-typeset .personality-reverse {
+  background: #eceff1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .apostle-label {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #f8fafc;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-pure {
+  background: #28543a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-cool {
+  background: #214b66;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-madness {
+  background: #6d3444;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-lively {
+  background: #66551f;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-gloomy {
+  background: #44376b;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .personality-reverse {
+  background: #45505a;
+}
+
+.md-typeset .card-thumbnail {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  max-width: none;
+  border-radius: 0.55rem;
+  object-fit: cover;
+}
+
+.md-typeset table:has(.card-thumbnail) {
+  min-width: 90rem;
+}

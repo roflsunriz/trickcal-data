@@ -1,0 +1,946 @@
+{
+  "retrieved_at": "2026-10-23",
+  "sources": {
+    "apostles": "https://wikiwiki.jp/thetrickal/%E4%BD%BF%E5%BE%92%E4%B8%80%E8%A6%A7",
+    "artifact_cards": "https://wikiwiki.jp/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89",
+    "spell_cards": "https://wikiwiki.jp/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89"
+  },
+  "apostles": [
+    {
+      "name": "ヴィヴィ",
+      "personality": "純粋",
+      "file": "apostles/vivi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Vivi.webp?rev=d2897eedd8f3aeacef1e130533774cb9&t=20260303084540"
+    },
+    {
+      "name": "エルフィン",
+      "personality": "純粋",
+      "file": "apostles/erpin.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Erpin.webp?rev=715cadb3cda06a37d90078515265c9ee&t=20260303075016"
+    },
+    {
+      "name": "ガヴィア",
+      "personality": "純粋",
+      "file": "apostles/gabia.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Gabia.webp?rev=2ed2c63ac30c8b2ba7e65e4aa060247a&t=20260303075314"
+    },
+    {
+      "name": "キャロット",
+      "personality": "純粋",
+      "file": "apostles/kyarot.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Kyarot.webp?rev=15182529e2849d615ec47f95be192f35&t=20260303080732"
+    },
+    {
+      "name": "シェルム",
+      "personality": "純粋",
+      "file": "apostles/sherum.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Sherum.webp?rev=a1778d8233aff73ab84da77ff05bde8f&t=20250525165446"
+    },
+    {
+      "name": "シルフィール",
+      "personality": "純粋",
+      "file": "apostles/silphir.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Silphir.webp?rev=3d12ff64364b149a11ce03e428ac1d5e&t=20260303074513"
+    },
+    {
+      "name": "スピッキー",
+      "personality": "純粋",
+      "file": "apostles/speaki.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Speaki.webp?rev=9f7481e273479ec90342a771d331bd68&t=20260303083748"
+    },
+    {
+      "name": "ダーヤ",
+      "personality": "純粋",
+      "file": "apostles/daya.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Daya.webp?rev=0f6621890ef37c3c5063cc496826eead&t=20260303084613"
+    },
+    {
+      "name": "ナイア",
+      "personality": "純粋",
+      "file": "apostles/naia.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Naia.webp?rev=91cb513ebeeba08bce92e070afc950ac&t=20260303082036"
+    },
+    {
+      "name": "ヘイリー",
+      "personality": "純粋",
+      "file": "apostles/haley.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Haley.webp?rev=92d0486a389956b5d28a82c63c6b0d12&t=20260303085043"
+    },
+    {
+      "name": "マーゴ",
+      "personality": "純粋",
+      "file": "apostles/mago.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Mago.webp?rev=b21e61b05fdcb0c9eb421a3b558c1910&t=20250610001151"
+    },
+    {
+      "name": "ローネ",
+      "personality": "純粋",
+      "file": "apostles/rohne.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Rohne.webp?rev=75b285480dfb2e37dfc232ae199b9a16&t=20250608173908"
+    },
+    {
+      "name": "アレット",
+      "personality": "純粋",
+      "file": "apostles/allet.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Allet.webp?rev=38a3cf67fc378905734fc68906383e08&t=20260303085201"
+    },
+    {
+      "name": "サリー",
+      "personality": "純粋",
+      "file": "apostles/sari.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Sari.webp?rev=a453f00de5f503e08951719ae8aa043f&t=20250625165908"
+    },
+    {
+      "name": "ビッグウッド",
+      "personality": "純粋",
+      "file": "apostles/bigwood.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/BigWood.webp?rev=e205954e37c6d2a313569253068ee57e&t=20260303085921"
+    },
+    {
+      "name": "キュウイ",
+      "personality": "純粋",
+      "file": "apostles/kyuri.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Kyuri.webp?rev=4e0df8e8a962b6b6f5f024fc1646dda2&t=20260303074616"
+    },
+    {
+      "name": "アヤ",
+      "personality": "冷静",
+      "file": "apostles/aya.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Aya.webp?rev=534d4ffa2b8eb4868060a5142bf4ee74&t=20260303074105"
+    },
+    {
+      "name": "イード",
+      "personality": "冷静",
+      "file": "apostles/ed.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Ed.webp?rev=9d99fda1da1982be0336d98660c0ad3e&t=20260320180538"
+    },
+    {
+      "name": "アメリア",
+      "personality": "冷静",
+      "file": "apostles/amelia.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Amelia.webp?rev=1bd20ce79f734e60e3b69c06712dc23b&t=20250524183005"
+    },
+    {
+      "name": "エレナ",
+      "personality": "冷静",
+      "file": "apostles/elena.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Elena.webp?rev=fd259ba4643bffdb4c5a3c714d163f09&t=20250531125352"
+    },
+    {
+      "name": "グウィン",
+      "personality": "冷静",
+      "file": "apostles/guin.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Guin.webp?rev=9ed9906a5051fb093501002884172598&t=20250605030727"
+    },
+    {
+      "name": "コミー(水着)",
+      "personality": "冷静",
+      "file": "apostles/kommy-swimsuit.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Kommy_Swimsuit.webp?rev=10148d89e22c474fd12e63c5571d808b&t=20260523134324"
+    },
+    {
+      "name": "シーラ",
+      "personality": "冷静",
+      "file": "apostles/sylla.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Sylla.webp?rev=cd8bfedaad3a05a49b696a08f291f92e&t=20260303083836"
+    },
+    {
+      "name": "ジェイド",
+      "personality": "冷静",
+      "file": "apostles/jade.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Jade.webp?rev=f9ac20bf5a5438d3442f24fc28e4d3d6&t=20260303075531"
+    },
+    {
+      "name": "バロン",
+      "personality": "冷静",
+      "file": "apostles/barong.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Barong.webp?rev=dbe800c7f734faaf13a85ea34a61b592&t=20260216220251"
+    },
+    {
+      "name": "ピコラ",
+      "personality": "冷静",
+      "file": "apostles/picora.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Picora.webp?rev=3e5421e14f654235f830715aae8f1454&t=20260303084758"
+    },
+    {
+      "name": "フリックル",
+      "personality": "冷静",
+      "file": "apostles/fricle.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Fricle.webp?rev=dd65c9ba6e8a31e1a4b50826a1f3af1a&t=20250625195454"
+    },
+    {
+      "name": "ベルベット",
+      "personality": "冷静",
+      "file": "apostles/velvet.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Velvet.webp?rev=4fcaa959d76a6a4698437fc66846bac8&t=20250625195417"
+    },
+    {
+      "name": "エスピー",
+      "personality": "冷静",
+      "file": "apostles/espi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Espi.webp?rev=701f0d23b5d5eee42a38ca37c752e0ca&t=20260303075110"
+    },
+    {
+      "name": "メロナ",
+      "personality": "冷静",
+      "file": "apostles/meluna.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Meluna.webp?rev=8cbb115b112741af36d59e724c4c1e4b&t=20260303081921"
+    },
+    {
+      "name": "レイジー",
+      "personality": "冷静",
+      "file": "apostles/layze.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Layze.webp?rev=fe201518a63264923d2302a64e1fd7dd&t=20260303080947"
+    },
+    {
+      "name": "レーテー",
+      "personality": "冷静",
+      "file": "apostles/lethe.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Lethe.webp?rev=a944cdc6beea062b6a323c02a768bf1b&t=20260303073922"
+    },
+    {
+      "name": "パトラ",
+      "personality": "冷静",
+      "file": "apostles/patula.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Patula.webp?rev=9218847de63894448beb301e6ec70088&t=20260303082247"
+    },
+    {
+      "name": "クロエ",
+      "personality": "狂気",
+      "file": "apostles/chloe.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Chloe.webp?rev=47fb493157afe8d73feac45174a75471&t=20260303074359"
+    },
+    {
+      "name": "リニュア",
+      "personality": "狂気",
+      "file": "apostles/renewa.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Renewa.webp?rev=6655ee19736bd5fe33c2a30fbb63ec64&t=20260611114608"
+    },
+    {
+      "name": "アリス",
+      "personality": "狂気",
+      "file": "apostles/alice.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Alice.webp?rev=2af12accf04bbd1a4445c8bf3786c6c5&t=20250601175418"
+    },
+    {
+      "name": "イフリート",
+      "personality": "狂気",
+      "file": "apostles/ifrit.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Ifrit.webp?rev=36450199b5c43bbac5c06f54c3b0def3&t=20260303075441"
+    },
+    {
+      "name": "シェイディ",
+      "personality": "狂気",
+      "file": "apostles/shaydi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Shaydi.webp?rev=4b9caf119ef51ce95c5a04aeeb476788&t=20260303083157"
+    },
+    {
+      "name": "シスト",
+      "personality": "狂気",
+      "file": "apostles/sist.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Sist.webp?rev=e72df1043c9f92861b4b55c21ee5836b&t=20260303084055"
+    },
+    {
+      "name": "ディアナ",
+      "personality": "狂気",
+      "file": "apostles/diana.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Diana.webp?rev=0446642d4dbb95881b07caeed6798ac2&t=20250610004001"
+    },
+    {
+      "name": "ネル",
+      "personality": "狂気",
+      "file": "apostles/ner.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Ner.webp?rev=eb718a9eb22912b4793fd991129b0c83&t=20250531112431"
+    },
+    {
+      "name": "ピラ",
+      "personality": "狂気",
+      "file": "apostles/pira.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Pira.webp?rev=442c3d8aa68414777443a55c6747a4d4&t=20260409200959"
+    },
+    {
+      "name": "ベリータ",
+      "personality": "狂気",
+      "file": "apostles/belita.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Belita.webp?rev=56ebd178c651f452a8062da68f966fdc&t=20260303084249"
+    },
+    {
+      "name": "マヨ",
+      "personality": "狂気",
+      "file": "apostles/mayo.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Mayo.webp?rev=9b14d457a1a87a4433d638a36c87f0f9&t=20260303081841"
+    },
+    {
+      "name": "リッツ",
+      "personality": "狂気",
+      "file": "apostles/leets.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Leets.webp?rev=1a298d0954c1ffb71905165989ca6619&t=20250602014210"
+    },
+    {
+      "name": "ロレット",
+      "personality": "狂気",
+      "file": "apostles/rollett.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Rollett.webp?rev=d2fb873eb589ddf674e7595326241bd5&t=20260303084702"
+    },
+    {
+      "name": "マエストロMK2",
+      "personality": "狂気",
+      "file": "apostles/maestro-mk2.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Maestro_MK2.webp?rev=17eac7c4a9081f3aa6bd4a5a3a7956f9&t=20250525203220"
+    },
+    {
+      "name": "ユミミ",
+      "personality": "狂気",
+      "file": "apostles/yumimi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Yumimi.webp?rev=a676824936a953da6e18f3bbca130f7a&t=20250525202857"
+    },
+    {
+      "name": "メゾン",
+      "personality": "狂気",
+      "file": "apostles/maison.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Maison.webp?rev=36cac1447405db66035719b5a047258a&t=20250625195115"
+    },
+    {
+      "name": "ウイ",
+      "personality": "活発",
+      "file": "apostles/ui.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Ui.webp?rev=7054ead418876ebb0da5f80147071f41&t=20260303084202"
+    },
+    {
+      "name": "エピカ",
+      "personality": "活発",
+      "file": "apostles/epica.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Epica.webp?rev=7bfe1cafba2b724cd11b3fd1031aac7d&t=20260530134919"
+    },
+    {
+      "name": "カンナ",
+      "personality": "活発",
+      "file": "apostles/canna.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Canna.webp?rev=68495a88146f54802074c76b3e4e7bef&t=20260303075805"
+    },
+    {
+      "name": "シュパン",
+      "personality": "活発",
+      "file": "apostles/shoupan.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Shoupan.webp?rev=290a7ec3b3df0534fe0dbfcd178c353e&t=20260303083433"
+    },
+    {
+      "name": "セリーネ",
+      "personality": "活発",
+      "file": "apostles/selene.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Selene.webp?rev=7814d80fbd6e9b09935e9c199117269f&t=20260303083055"
+    },
+    {
+      "name": "ティグ",
+      "personality": "活発",
+      "file": "apostles/tig.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Tig.webp?rev=bb9de281f7c19baca640a75fb055001e&t=20260215153421"
+    },
+    {
+      "name": "バター",
+      "personality": "活発",
+      "file": "apostles/butter.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Butter.webp?rev=c1af233f4bea11a744751cff571ce271&t=20260215153426"
+    },
+    {
+      "name": "ベニー",
+      "personality": "活発",
+      "file": "apostles/beni.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Beni.webp?rev=411550fcdc225e278233c86ffa291922&t=20260215153434"
+    },
+    {
+      "name": "モモ",
+      "personality": "活発",
+      "file": "apostles/momo.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Momo.webp?rev=5f1c138de3ae1e297ac53074b5d456e3&t=20260215153312"
+    },
+    {
+      "name": "ルポ",
+      "personality": "活発",
+      "file": "apostles/rufo.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Rufo.webp?rev=9d471b6dac9692e9e8aafe3cf02ccbea&t=20250605111556"
+    },
+    {
+      "name": "ルード",
+      "personality": "活発",
+      "file": "apostles/rudd.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Rudd.webp?rev=d5661a5d3bedec3d783183882f148ded&t=20260303082721"
+    },
+    {
+      "name": "カレン",
+      "personality": "活発",
+      "file": "apostles/carren.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Carren.webp?rev=2d91d1aee4b1528ffdf195fbedebc3eb&t=20260303080033"
+    },
+    {
+      "name": "ジュビー",
+      "personality": "活発",
+      "file": "apostles/jubee.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Jubee.webp?rev=1c645f84f47fca09a2cdb0a001a32e57&t=20260303075722"
+    },
+    {
+      "name": "タイダー",
+      "personality": "活発",
+      "file": "apostles/taida.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Taida.webp?rev=89a9f8e3a33100f10608a7e0eea1eae2&t=20250625142656"
+    },
+    {
+      "name": "マリー",
+      "personality": "活発",
+      "file": "apostles/marie.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Marie.webp?rev=dfd75b4ae995bdfe68e2b395b80a9223&t=20260303081233"
+    },
+    {
+      "name": "ミンス",
+      "personality": "活発",
+      "file": "apostles/mynx.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Mynx.webp?rev=8568451ba0f21840b07fa77184c98ca1&t=20260215153250"
+    },
+    {
+      "name": "シオン・ザ・DB",
+      "personality": "憂鬱",
+      "file": "apostles/xion.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Xion.webp?rev=34ee8e5a554e7b9a4ffa30a939d90b94&t=20250601224834"
+    },
+    {
+      "name": "ヨミ",
+      "personality": "憂鬱",
+      "file": "apostles/yomi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Yomi.webp?rev=f5510a33a5c9d4ede755cacfcc747df7&t=20260215151853"
+    },
+    {
+      "name": "エシュール",
+      "personality": "憂鬱",
+      "file": "apostles/ashur.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Ashur.webp?rev=734a9587b220c1aa77f04d12f1758fdc&t=20250605021000"
+    },
+    {
+      "name": "コミー",
+      "personality": "憂鬱",
+      "file": "apostles/kommy.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Kommy.webp?rev=70a231a39a9af7e335fc8e929701e6f0&t=20260303080636"
+    },
+    {
+      "name": "スノキー",
+      "personality": "憂鬱",
+      "file": "apostles/snorky.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Snorky.webp?rev=71780cf7a3fb86c4e8749f04bad9210e&t=20260218121405"
+    },
+    {
+      "name": "ギデオン",
+      "personality": "憂鬱",
+      "file": "apostles/kidian.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Kidian.webp?rev=bb27797edaa09c320b0729767182cff5&t=20250525000505"
+    },
+    {
+      "name": "ヒルデ",
+      "personality": "憂鬱",
+      "file": "apostles/hilde.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Hilde.webp?rev=07dfe62634050a3fd3c4bbd9f3891765&t=20250603001810"
+    },
+    {
+      "name": "ブランセ",
+      "personality": "憂鬱",
+      "file": "apostles/blanchet.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Blanchet.webp?rev=a7bebb7495d17c74d62e0cd5cc165a3e&t=20260303074308"
+    },
+    {
+      "name": "ポーシャー",
+      "personality": "憂鬱",
+      "file": "apostles/posher.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Posher.webp?rev=d4adb04dce3ff537cce8ba7f70da6223&t=20250621234127"
+    },
+    {
+      "name": "リスティ",
+      "personality": "憂鬱",
+      "file": "apostles/risty.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Risty.webp?rev=abb7138a4387dd5ecbf6bbe29aed6156&t=20260303084427"
+    },
+    {
+      "name": "リム",
+      "personality": "憂鬱",
+      "file": "apostles/rim.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Rim.webp?rev=dfe8e83ce41e002da333b3bd68043e52&t=20260303084846"
+    },
+    {
+      "name": "レヴィ",
+      "personality": "憂鬱",
+      "file": "apostles/levi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Levi.webp?rev=6261235143c51aa900c777d6f9882040&t=20250610005543"
+    },
+    {
+      "name": "チョッピー",
+      "personality": "憂鬱",
+      "file": "apostles/chopi.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Chopi.webp?rev=38ad537bc234532018f6a45d56b94eeb&t=20250625173741"
+    },
+    {
+      "name": "バリエ",
+      "personality": "憂鬱",
+      "file": "apostles/barie.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Barie.webp?rev=a6bc7d5a2b5ed6dfe711e1f1cb297b3d&t=20260523133522"
+    },
+    {
+      "name": "フェスタ",
+      "personality": "憂鬱",
+      "file": "apostles/festa.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Festa.webp?rev=978e0f5ce2ebe3b941a4a579e4c21878&t=20250608165233"
+    },
+    {
+      "name": "ベル",
+      "personality": "憂鬱",
+      "file": "apostles/veroo.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Veroo.webp?rev=c7847609ecd04d40fcb144aa10bead29&t=20260303073803"
+    },
+    {
+      "name": "ジョアン",
+      "personality": "裏面",
+      "file": "apostles/joanne.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/FrontPage/::ref/Joanne.webp?rev=b99daef4fccb0ed2137fe13ad55cdae5&t=20260303075635"
+    }
+  ],
+  "artifact_cards": [
+    {
+      "name": "ヨミの向月葵の花",
+      "file": "cards/artifacts/ヨミの向月葵の花.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%A8%E3%83%9F%E3%81%AE%E5%90%91%E6%9C%88%E8%91%B5%E3%81%AE%E8%8A%B1.webp?rev=3e5c5e656c84081251a3f84d63f8fe8b&t=20260703083554"
+    },
+    {
+      "name": "エルフィンのアイスケーキ",
+      "file": "cards/artifacts/エルフィンのアイスケーキ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A8%E3%83%AB%E3%83%95%E3%82%A3%E3%83%B3%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B1%E3%83%BC%E3%82%AD.webp?rev=05fe0dc68010c267a74a77c06159a3b2&t=20260705221341"
+    },
+    {
+      "name": "バターのイエローカード",
+      "file": "cards/artifacts/バターのイエローカード.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%90%E3%82%BF%E3%83%BC%E3%81%AE%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%89.webp?rev=22e21c90ba57ef0131d9842a142ab5ed&t=20260702142705"
+    },
+    {
+      "name": "ヴィヴィの銀色の指揮棒",
+      "file": "cards/artifacts/ヴィヴィの銀色の指揮棒.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%B4%E3%82%A3%E3%83%B4%E3%82%A3%E3%81%AE%E9%8A%80%E8%89%B2%E3%81%AE%E6%8C%87%E6%8F%AE%E6%A3%92.webp?rev=39c9a8bebe27915f7871e6d9f6025ec0&t=20260705221347"
+    },
+    {
+      "name": "エレナの強化ドローン",
+      "file": "cards/artifacts/エレナの強化ドローン.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A8%E3%83%AC%E3%83%8A%E3%81%AE%E5%BC%B7%E5%8C%96%E3%83%89%E3%83%AD%E3%83%BC%E3%83%B3.webp?rev=978afbdb69558fae08265c0355b295e5&t=20260705221353"
+    },
+    {
+      "name": "リッツのすり減った砥石",
+      "file": "cards/artifacts/リッツのすり減った砥石.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AA%E3%83%83%E3%83%84%E3%81%AE%E3%81%99%E3%82%8A%E6%B8%9B%E3%81%A3%E3%81%9F%E7%A0%A5%E7%9F%B3.webp?rev=590cdd65465b0195c59363f22938c363&t=20260705221416"
+    },
+    {
+      "name": "ブランセの花束",
+      "file": "cards/artifacts/ブランセの花束.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%96%E3%83%A9%E3%83%B3%E3%82%BB%E3%81%AE%E8%8A%B1%E6%9D%9F.webp?rev=c105b86923c2d48227acc5a2bdeadfbe&t=20260705221424"
+    },
+    {
+      "name": "ピコラのファッションポーチ",
+      "file": "cards/artifacts/ピコラのファッションポーチ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%94%E3%82%B3%E3%83%A9%E3%81%AE%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%81.webp?rev=2e62046df9498831250bd8e54d45da49&t=20260705221431"
+    },
+    {
+      "name": "シオンの黒マント",
+      "file": "cards/artifacts/シオンの黒マント.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B7%E3%82%AA%E3%83%B3%E3%81%AE%E9%BB%92%E3%83%9E%E3%83%B3%E3%83%88.webp?rev=60e07d28d65edb260a9fc76cc1480b91&t=20260705221702"
+    },
+    {
+      "name": "ナイアのイルカ水鉄砲",
+      "file": "cards/artifacts/ナイアのイルカ水鉄砲.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%8A%E3%82%A4%E3%82%A2%E3%81%AE%E3%82%A4%E3%83%AB%E3%82%AB%E6%B0%B4%E9%89%84%E7%A0%B2.webp?rev=32c6f198a5d24a39864f89eed9184670&t=20260705221509"
+    },
+    {
+      "name": "シュパンの魔法リュック",
+      "file": "cards/artifacts/シュパンの魔法リュック.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B7%E3%83%A5%E3%83%91%E3%83%B3%E3%81%AE%E9%AD%94%E6%B3%95%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF.webp?rev=04ffd09e4818bf247e83fd4660a12a91&t=20260705221516"
+    },
+    {
+      "name": "スノキーのフェドーラ",
+      "file": "cards/artifacts/スノキーのフェドーラ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B9%E3%83%8E%E3%82%AD%E3%83%BC%E3%81%AE%E3%83%95%E3%82%A7%E3%83%89%E3%83%BC%E3%83%A9.webp?rev=eadbe60aa981f64976b87ca52eac047a&t=20260705221522"
+    },
+    {
+      "name": "セリーネの夜幻影",
+      "file": "cards/artifacts/セリーネの夜幻影.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%BB%E3%83%AA%E3%83%BC%E3%83%8D%E3%81%AE%E5%A4%9C%E5%B9%BB%E5%BD%B1.webp?rev=7909e90f879c51968abb8acba58cf55c&t=20260702143146"
+    },
+    {
+      "name": "キャロットのサトウキビ",
+      "file": "cards/artifacts/キャロットのサトウキビ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%AD%E3%83%A3%E3%83%AD%E3%83%83%E3%83%88%E3%81%AE%E3%82%B5%E3%83%88%E3%82%A6%E3%82%AD%E3%83%93.webp?rev=c8a0e815ab8e6dc2f104bfa2fd283f90&t=20260702143200"
+    },
+    {
+      "name": "クロエの万能裁縫箱",
+      "file": "cards/artifacts/クロエの万能裁縫箱.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%AF%E3%83%AD%E3%82%A8%E3%81%AE%E4%B8%87%E8%83%BD%E8%A3%81%E7%B8%AB%E7%AE%B1.webp?rev=153dec7bed5b77aefefbcc14b8aae824&t=20260705221541"
+    },
+    {
+      "name": "リスティの模造グローブ",
+      "file": "cards/artifacts/リスティの模造グローブ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%81%AE%E6%A8%A1%E9%80%A0%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%96.webp?rev=9353707028dcbd9767a95ed3de3c2865&t=20260705221548"
+    },
+    {
+      "name": "バロンの呪いのぬいぐるみ",
+      "file": "cards/artifacts/バロンの呪いのぬいぐるみ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%90%E3%83%AD%E3%83%B3%E3%81%AE%E5%91%AA%E3%81%84%E3%81%AE%E3%81%AC%E3%81%84%E3%81%90%E3%82%8B%E3%81%BF.webp?rev=20d6275ccd1fb444cc723317c9e431b5&t=20260716110322"
+    },
+    {
+      "name": "ティグの燃え盛る剣",
+      "file": "cards/artifacts/ティグの燃え盛る剣.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%86%E3%82%A3%E3%82%B0%E3%81%AE%E7%87%83%E3%81%88%E7%9B%9B%E3%82%8B%E5%89%A3.webp?rev=492305a662a135d50812a865a0bebc11&t=20260722174744"
+    },
+    {
+      "name": "ルードのトレーニング教本",
+      "file": "cards/artifacts/ルードのトレーニング教本.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AB%E3%83%BC%E3%83%89%E3%81%AE%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E6%95%99%E6%9C%AC.webp?rev=9e09b26362071657143509d09479fecc&t=20260714222310"
+    },
+    {
+      "name": "ロレットのマジックハット",
+      "file": "cards/artifacts/ロレットのマジックハット.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AD%E3%83%AC%E3%83%83%E3%83%88%E3%81%AE%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%8F%E3%83%83%E3%83%88.webp?rev=e6468db6c57bbce3f87893870cadebe4&t=20260730172207"
+    },
+    {
+      "name": "ピラの輝く名刺",
+      "file": "cards/artifacts/ピラの輝く名刺.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%94%E3%83%A9%E3%81%AE%E8%BC%9D%E3%81%8F%E5%90%8D%E5%88%BA.webp?rev=e785cb04e109488747bea9ac483d33ba&t=20260903104724"
+    },
+    {
+      "name": "シェルムの羊皮紙の巻物",
+      "file": "cards/artifacts/シェルムの羊皮紙の巻物.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B7%E3%82%A7%E3%83%AB%E3%83%A0%E3%81%AE%E7%BE%8A%E7%9A%AE%E7%B4%99%E3%81%AE%E5%B7%BB%E7%89%A9.webp?rev=02848d0fe82d3e2b8f0cac66b1bf7b57&t=20260917202147"
+    },
+    {
+      "name": "竜光剣",
+      "file": "cards/artifacts/竜光剣.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%AB%9C%E5%85%89%E5%89%A3.webp?rev=fb26c2f2b2e9c79c58bdf9b0e9e284a4&t=20260702142656"
+    },
+    {
+      "name": "ライフジェム",
+      "file": "cards/artifacts/ライフジェム.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B8%E3%82%A7%E3%83%A0.webp?rev=241f39bd9a80bb4f3f820d1ae1af5053&t=20260702153941"
+    },
+    {
+      "name": "30KGケトルベル",
+      "file": "cards/artifacts/30KGケトルベル.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/30KG%E3%82%B1%E3%83%88%E3%83%AB%E3%83%99%E3%83%AB.webp?rev=05b63200c1e146e8385245d54d60e8d0&t=20260702153932"
+    },
+    {
+      "name": "ニスリルのパン切り包丁",
+      "file": "cards/artifacts/ニスリルのパン切り包丁.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%8B%E3%82%B9%E3%83%AA%E3%83%AB%E3%81%AE%E3%83%91%E3%83%B3%E5%88%87%E3%82%8A%E5%8C%85%E4%B8%81.webp?rev=3d9e692a036c7b0f84da8528ab61b436&t=20260717083650"
+    },
+    {
+      "name": "ふわふわチョッキ",
+      "file": "cards/artifacts/ふわふわチョッキ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%81%B5%E3%82%8F%E3%81%B5%E3%82%8F%E3%83%81%E3%83%A7%E3%83%83%E3%82%AD.webp?rev=e06a3a0b0430ad3ed5e6fba68e69391d&t=20260702153936"
+    },
+    {
+      "name": "エルダインランプ",
+      "file": "cards/artifacts/エルダインランプ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A8%E3%83%AB%E3%83%80%E3%82%A4%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%97.webp?rev=201682dffd5fc1e95addfe255697c50c&t=20260702153922"
+    },
+    {
+      "name": "暗殺者の秘伝書",
+      "file": "cards/artifacts/暗殺者の秘伝書.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%9A%97%E6%AE%BA%E8%80%85%E3%81%AE%E7%A7%98%E4%BC%9D%E6%9B%B8.webp?rev=60f39c9fd5c1a2b19275c945c52368a4&t=20260702153945"
+    },
+    {
+      "name": "剣と杖",
+      "file": "cards/artifacts/剣と杖.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%89%A3%E3%81%A8%E6%9D%96.webp?rev=17ae00a27b8e11c9ffbc417269196c70&t=20260710081714"
+    },
+    {
+      "name": "安全帯",
+      "file": "cards/artifacts/安全帯.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%AE%89%E5%85%A8%E5%B8%AF.webp?rev=d1898d56bbb027f2da5112d79108088a&t=20260710075855"
+    },
+    {
+      "name": "バトルマニュアル",
+      "file": "cards/artifacts/バトルマニュアル.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%90%E3%83%88%E3%83%AB%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB.webp?rev=0aa573296f3e48c833399c9ed6f8a51c&t=20260721212217"
+    },
+    {
+      "name": "青玉色の魔導書",
+      "file": "cards/artifacts/青玉色の魔導書.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%9D%92%E7%8E%89%E8%89%B2%E3%81%AE%E9%AD%94%E5%B0%8E%E6%9B%B8.webp?rev=cf0673b5e21532f386761a4afe0fcfa2&t=20260721212034"
+    },
+    {
+      "name": "スケイルアーマー",
+      "file": "cards/artifacts/スケイルアーマー.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B9%E3%82%B1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%BC%E3%83%9E%E3%83%BC.webp?rev=2c23991ec26a4b1a1b2480cc5f54a8c4&t=20260721212212"
+    },
+    {
+      "name": "祝福された肩鎧",
+      "file": "cards/artifacts/祝福された肩鎧.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%A5%9D%E7%A6%8F%E3%81%95%E3%82%8C%E3%81%9F%E8%82%A9%E9%8E%A7.webp?rev=b2a4d98a55fbf6085a4a2b1bcb05e0b3&t=20260721212202"
+    },
+    {
+      "name": "祭司長の香炉",
+      "file": "cards/artifacts/祭司長の香炉.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%A5%AD%E5%8F%B8%E9%95%B7%E3%81%AE%E9%A6%99%E7%82%89.webp?rev=d1e5b0c1e5be404bc2bcb2aae625aa67&t=20260721212207"
+    },
+    {
+      "name": "起源の聖杯",
+      "file": "cards/artifacts/起源の聖杯.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E8%B5%B7%E6%BA%90%E3%81%AE%E8%81%96%E6%9D%AF.webp?rev=1fdab1118085366a3bdda4d0f3192bda&t=20260721212039"
+    },
+    {
+      "name": "狂気の仮面",
+      "file": "cards/artifacts/狂気の仮面.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%8B%82%E6%B0%97%E3%81%AE%E4%BB%AE%E9%9D%A2.webp?rev=5e9c9bc3d25c9a40d3227eeec8493a75&t=20260721212146"
+    },
+    {
+      "name": "癒やしのペンダント",
+      "file": "cards/artifacts/癒やしのペンダント.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%99%92%E3%82%84%E3%81%97%E3%81%AE%E3%83%9A%E3%83%B3%E3%83%80%E3%83%B3%E3%83%88.webp?rev=94aa027b396891ae6ed16bbc51c2b789&t=20260721212153"
+    },
+    {
+      "name": "黒曜石の手裏剣",
+      "file": "cards/artifacts/黒曜石の手裏剣.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%BB%92%E6%9B%9C%E7%9F%B3%E3%81%AE%E6%89%8B%E8%A3%8F%E5%89%A3.webp?rev=335d2bbe4c97b0741c1d896eca37ec9a&t=20260723125312"
+    },
+    {
+      "name": "古木のダガー",
+      "file": "cards/artifacts/古木のダガー.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%8F%A4%E6%9C%A8%E3%81%AE%E3%83%80%E3%82%AC%E3%83%BC.webp?rev=1f40224215a76b861c29f8c247ffd9e2&t=20260723130641"
+    },
+    {
+      "name": "強欲の指輪",
+      "file": "cards/artifacts/強欲の指輪.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%BC%B7%E6%AC%B2%E3%81%AE%E6%8C%87%E8%BC%AA.webp?rev=90f3efa4b0e4f40a2031d77633a05e5e&t=20260723125303"
+    },
+    {
+      "name": "エルフ製の杖",
+      "file": "cards/artifacts/エルフ製の杖.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A8%E3%83%AB%E3%83%95%E8%A3%BD%E3%81%AE%E6%9D%96.webp?rev=757d4d4841c161f2f46abb4addd6baa1&t=20260723180009"
+    },
+    {
+      "name": "宝石の指輪",
+      "file": "cards/artifacts/宝石の指輪.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%AE%9D%E7%9F%B3%E3%81%AE%E6%8C%87%E8%BC%AA.webp?rev=8318f63c06908dbfe595afde4dc8f51c&t=20260723193955"
+    },
+    {
+      "name": "古びた矢",
+      "file": "cards/artifacts/古びた矢.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%8F%A4%E3%81%B3%E3%81%9F%E7%9F%A2.webp?rev=9040c6d260825efd617b685dd7b80df8&t=20260723125308"
+    },
+    {
+      "name": "茨の冠",
+      "file": "cards/artifacts/茨の冠.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E8%8C%A8%E3%81%AE%E5%86%A0.webp?rev=796f9764227aea186f3994b73a51a16e&t=20260723125259"
+    },
+    {
+      "name": "霜のお守り",
+      "file": "cards/artifacts/霜のお守り.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%9C%9C%E3%81%AE%E3%81%8A%E5%AE%88%E3%82%8A.webp?rev=c1d2e6fb0a83255282527a59521c41b0&t=20260723195814"
+    },
+    {
+      "name": "風呂敷のローブ",
+      "file": "cards/artifacts/風呂敷のローブ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%A2%A8%E5%91%82%E6%95%B7%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%96.webp?rev=ceb9f33069a68708cb0b09524145cae5&t=20260723194004"
+    },
+    {
+      "name": "シャイニングティアラ",
+      "file": "cards/artifacts/シャイニングティアラ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%86%E3%82%A3%E3%82%A2%E3%83%A9.webp?rev=c7af78b6969c05cbf7b5507139bd4e00&t=20260723125255"
+    },
+    {
+      "name": "段ボールのアーマー",
+      "file": "cards/artifacts/段ボールのアーマー.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%AE%B5%E3%83%9C%E3%83%BC%E3%83%AB%E3%81%AE%E3%82%A2%E3%83%BC%E3%83%9E%E3%83%BC.webp?rev=a012801d69897d1cb1655cdc2584495e&t=20260723125322"
+    },
+    {
+      "name": "頭巻きタオル",
+      "file": "cards/artifacts/頭巻きタオル.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%A0%AD%E5%B7%BB%E3%81%8D%E3%82%BF%E3%82%AA%E3%83%AB.webp?rev=d7161d17b91ee9e9436d7086f7706b74&t=20251201002945"
+    },
+    {
+      "name": "錆びついた錐",
+      "file": "cards/artifacts/錆びついた錐.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E9%81%BA%E7%89%A9%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%8C%86%E3%81%B3%E3%81%A4%E3%81%84%E3%81%9F%E9%8C%90.webp?rev=179efb9eaa137cab1aa88bdc8624cda2&t=20260723125317"
+    }
+  ],
+  "spell_cards": [
+    {
+      "name": "アリスのデタラメな呪術",
+      "file": "cards/spells/アリスのデタラメな呪術.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A2%E3%83%AA%E3%82%B9%E3%81%AE%E3%83%87%E3%82%BF%E3%83%A9%E3%83%A1%E3%81%AA%E5%91%AA%E8%A1%93.webp.webp?rev=f3b11f743e4f875b70fbf289fa07a9b2&t=20260721084701"
+    },
+    {
+      "name": "エピカの高貴なる英雄讃歌",
+      "file": "cards/spells/エピカの高貴なる英雄讃歌.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A8%E3%83%94%E3%82%AB%E3%81%AE%E9%AB%98%E8%B2%B4%E3%81%AA%E3%82%8B%E8%8B%B1%E9%9B%84%E8%AE%83%E6%AD%8C.webp.webp?rev=2e461b17e1939cfebf5abd522fcecd61&t=20260721084710"
+    },
+    {
+      "name": "ルシ・イードドリーム",
+      "file": "cards/spells/ルシ・イードドリーム.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AB%E3%82%B7%20%E2%80%90%20%E3%82%A4%E3%83%BC%E3%83%89%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0.webp.webp?rev=8fa674b907f5fd907dad1a2ee024159d&t=20260721084728"
+    },
+    {
+      "name": "リニュアのタイムパラドックス",
+      "file": "cards/spells/リニュアのタイムパラドックス.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%AA%E3%83%8B%E3%83%A5%E3%82%A2%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%91%E3%83%A9%E3%83%89%E3%83%83%E3%82%AF%E3%82%B9.webp.webp?rev=a189af47c321042cf6ee954e510cf6d1&t=20260618173944"
+    },
+    {
+      "name": "アヤの雪の花魔法",
+      "file": "cards/spells/アヤの雪の花魔法.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A2%E3%83%A4%E3%81%AE%E9%9B%AA%E3%81%AE%E8%8A%B1%E9%AD%94%E6%B3%95.webp.webp?rev=bfc6c84ced3b8c869c311dd197441379&t=20260813174109"
+    },
+    {
+      "name": "ジョアンの祈りの権能",
+      "file": "cards/spells/ジョアンの祈りの権能.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%B8%E3%83%A7%E3%82%A2%E3%83%B3%E3%81%AE%E7%A5%88%E3%82%8A%E3%81%AE%E6%A8%A9%E8%83%BD.webp.webp?rev=ba4149795736c51593cb05a5ea1021f1&t=20260924182210"
+    },
+    {
+      "name": "美しいって罪ね",
+      "file": "cards/spells/美しいって罪ね.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%BE%8E%E3%81%97%E3%81%84%E3%81%A3%E3%81%A6%E7%BD%AA%E3%81%AD.webp?rev=70c626b74e8f65a47820492277a0126f&t=20250806193657"
+    },
+    {
+      "name": "怪しいポーション",
+      "file": "cards/spells/怪しいポーション.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%AA%E3%81%97%E3%81%84%E3%83%9D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.webp?rev=734a8875503a63d9302d718d57df3c31&t=20250806193711"
+    },
+    {
+      "name": "バトルの達人",
+      "file": "cards/spells/バトルの達人.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%90%E3%83%88%E3%83%AB%E3%81%AE%E9%81%94%E4%BA%BA.webp?rev=fb4f3bde724a5562fa6de224ae587f99&t=20250806194546"
+    },
+    {
+      "name": "アロマセラピー",
+      "file": "cards/spells/アロマセラピー.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A2%E3%83%AD%E3%83%9E%E3%82%BB%E3%83%A9%E3%83%94%E3%83%BC.webp?rev=4d9db0bd23c0880c437b85bcbbd8bfbe&t=20250806194941"
+    },
+    {
+      "name": "やる気アップ",
+      "file": "cards/spells/やる気アップ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%84%E3%82%8B%E6%B0%97%E3%82%A2%E3%83%83%E3%83%97.webp?rev=8e16c28f4c0c4896f615cfe1673ad9f8&t=20250806195820"
+    },
+    {
+      "name": "世話好き",
+      "file": "cards/spells/世話好き.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E4%B8%96%E8%A9%B1%E5%A5%BD%E3%81%8D.webp?rev=2bfe17d120324d265f7131d52f591364&t=20250806200226"
+    },
+    {
+      "name": "前衛隊",
+      "file": "cards/spells/前衛隊.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%89%8D%E8%A1%9B%E9%9A%8A.webp?rev=6255ed928713aee7c1e5d26aa8bbcc2e&t=20250806204127"
+    },
+    {
+      "name": "センター最高！",
+      "file": "cards/spells/センター最高！.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E6%9C%80%E9%AB%98%EF%BC%81.webp?rev=9fce0c2b335d43778a23737f726b9aac&t=20250806200655"
+    },
+    {
+      "name": "後衛隊",
+      "file": "cards/spells/後衛隊.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%BE%8C%E8%A1%9B%E9%9A%8A.webp?rev=49fde3401e37eaa523e42d516a139504&t=20250806204906"
+    },
+    {
+      "name": "性格カード【純粋】",
+      "file": "cards/spells/性格カード【純粋】.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%A7%E6%A0%BC%E3%82%AB%E3%83%BC%E3%83%89%E3%80%90%E7%B4%94%E7%B2%8B%E3%80%91.webp?rev=47d10560323fe62008cef6863175c7fc&t=20250806210130"
+    },
+    {
+      "name": "性格カード【冷静】",
+      "file": "cards/spells/性格カード【冷静】.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%A7%E6%A0%BC%E3%82%AB%E3%83%BC%E3%83%89%E3%80%90%E5%86%B7%E9%9D%99%E3%80%91.webp?rev=565cd890a93b837b430dc05886c36b2c&t=20250806211046"
+    },
+    {
+      "name": "性格カード【狂気】",
+      "file": "cards/spells/性格カード【狂気】.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%A7%E6%A0%BC%E3%82%AB%E3%83%BC%E3%83%89%E3%80%90%E7%8B%82%E6%B0%97%E3%80%91.webp?rev=2f31c075978431973ee6f8acb71470d2&t=20250806205457"
+    },
+    {
+      "name": "性格カード【活発】",
+      "file": "cards/spells/性格カード【活発】.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%A7%E6%A0%BC%E3%82%AB%E3%83%BC%E3%83%89%E3%80%90%E6%B4%BB%E7%99%BA%E3%80%91.webp?rev=ea92eba54273c794229c5f11ea362e75&t=20250806205820"
+    },
+    {
+      "name": "性格カード【憂鬱】",
+      "file": "cards/spells/性格カード【憂鬱】.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%80%A7%E6%A0%BC%E3%82%AB%E3%83%BC%E3%83%89%E3%80%90%E6%86%82%E9%AC%B1%E3%80%91.webp?rev=c28b2872047383db532e98a9e95e96b2&t=20250806210622"
+    },
+    {
+      "name": "神速の身のこなし",
+      "file": "cards/spells/神速の身のこなし.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E7%A5%9E%E9%80%9F%E3%81%AE%E8%BA%AB%E3%81%AE%E3%81%93%E3%81%AA%E3%81%97.webp?rev=56ca07429952c76204df80dfd2d90138&t=20251130114927"
+    },
+    {
+      "name": "堅固な信念",
+      "file": "cards/spells/堅固な信念.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%A0%85%E5%9B%BA%E3%81%AA%E4%BF%A1%E5%BF%B5.webp?rev=5b8dac30482bf4fa22dfeb57d3999311&t=20251130114908"
+    },
+    {
+      "name": "会心の一撃",
+      "file": "cards/spells/会心の一撃.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E4%BC%9A%E5%BF%83%E3%81%AE%E4%B8%80%E6%92%83.webp?rev=b61850e0716ca498b7f9173c932a8c80&t=20250807145441"
+    },
+    {
+      "name": "体力強化",
+      "file": "cards/spells/体力強化.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E4%BD%93%E5%8A%9B%E5%BC%B7%E5%8C%96.webp?rev=9add03f519305d3f77bdb6e374430e32&t=20250807173202"
+    },
+    {
+      "name": "防弾不壊",
+      "file": "cards/spells/防弾不壊.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E9%98%B2%E5%BC%BE%E4%B8%8D%E5%A3%8A.webp?rev=d5fa2ba716bc217f8431747a24b2e488&t=20250807173759"
+    },
+    {
+      "name": "健康が一番",
+      "file": "cards/spells/健康が一番.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%81%A5%E5%BA%B7%E3%81%8C%E4%B8%80%E7%95%AA.webp?rev=5cbc828ab040cb87e710764989fb3381&t=20250807174142"
+    },
+    {
+      "name": "これ、残像だよ",
+      "file": "cards/spells/これ、残像だよ.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%81%93%E3%82%8C%E3%80%81%E6%AE%8B%E5%83%8F%E3%81%A0%E3%82%88.webp?rev=741345b81649495065fa4ac86bdcee3c&t=20250807174522"
+    },
+    {
+      "name": "パーソナルトレーニング",
+      "file": "cards/spells/パーソナルトレーニング.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0.webp?rev=1d6b0dfef98e5f783e88822973010da5&t=20250807175001"
+    },
+    {
+      "name": "やればできる",
+      "file": "cards/spells/やればできる.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%84%E3%82%8C%E3%81%B0%E3%81%A7%E3%81%8D%E3%82%8B.webp?rev=51c8b741611a69365439f7b57f5aad5e&t=20250807175436"
+    },
+    {
+      "name": "見習い魔法使い",
+      "file": "cards/spells/見習い魔法使い.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E8%A6%8B%E7%BF%92%E3%81%84%E9%AD%94%E6%B3%95%E4%BD%BF%E3%81%84.webp?rev=e1840ed8e0abb60b140181a3e119c448&t=20250807175735"
+    },
+    {
+      "name": "あいつを捕まえろ！",
+      "file": "cards/spells/あいつを捕まえろ！.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%81%82%E3%81%84%E3%81%A4%E3%82%92%E6%8D%95%E3%81%BE%E3%81%88%E3%82%8D%EF%BC%81.webp?rev=3914549df5227b26f7320e11e7cd8fa8&t=20250807180331"
+    },
+    {
+      "name": "ランダムコイン",
+      "file": "cards/spells/ランダムコイン.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%82%B3%E3%82%A4%E3%83%B3.webp?rev=04097140acc8c95187a3eadb85a78cf5&t=20250807180652"
+    },
+    {
+      "name": "巨木の皮",
+      "file": "cards/spells/巨木の皮.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E5%B7%A8%E6%9C%A8%E3%81%AE%E7%9A%AE.webp.webp?rev=9a2f01eaf7b16a9e593983a96e399356&t=20251130114845"
+    },
+    {
+      "name": "新人ファイター",
+      "file": "cards/spells/新人ファイター.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E6%96%B0%E4%BA%BA%E3%83%95%E3%82%A1%E3%82%A4%E3%82%BF%E3%83%BC.webp?rev=d47995f1ae8090d784e1136f1e60d7f3&t=20251130114917"
+    },
+    {
+      "name": "ソーダ味カプセル",
+      "file": "cards/spells/ソーダ味カプセル.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%BD%E3%83%BC%E3%83%80%E5%91%B3%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB.webp?rev=c0c836bd18adea4e5981e419df345006&t=20250807181948"
+    },
+    {
+      "name": "イチゴ味カプセル",
+      "file": "cards/spells/イチゴ味カプセル.webp",
+      "source_url": "https://cdn.wikiwiki.jp/to/w/thetrickal/%E3%82%AB%E3%83%BC%E3%83%89/%E3%82%B9%E3%83%9A%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89/::ref/%E3%82%A4%E3%83%81%E3%82%B4%E5%91%B3%E3%82%AB%E3%83%97%E3%82%BB%E3%83%AB.webp?rev=ce35a8ff38595534ab71c08c9fe56c06&t=20250807181919"
+    }
+  ]
+}
