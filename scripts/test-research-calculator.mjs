@@ -7,6 +7,11 @@ const source = readFileSync(
   new URL("../docs/javascripts/research-calculator-core.js", import.meta.url),
   "utf8",
 );
+const uiSource = readFileSync(
+  new URL("../docs/javascripts/research-calculator.js", import.meta.url),
+  "utf8",
+);
+assert.doesNotMatch(uiSource, /直接必要数/);
 const context = {};
 runInNewContext(source, context, { filename: "research-calculator-core.js" });
 const calculator = context.TrickcalResearchCalculator;

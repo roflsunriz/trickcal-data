@@ -23,7 +23,7 @@
     input.dataset.item = item;
     input.dataset.field = field;
     input.id = `research-${stage}-${field}-${item}`;
-    input.setAttribute("aria-label", `${item}の${field === "targets" ? "目標数" : field === "direct" ? "直接必要数" : "所持数"}`);
+    input.setAttribute("aria-label", `${item}の${field === "targets" ? "目標数" : "所持数"}`);
     return input;
   }
 
@@ -86,8 +86,8 @@
     return wrapper;
   }
 
-  function readInputs(container) {
-    const values = { targets: {}, direct: {}, stock: {} };
+  function readInputs(container, fixedDirect) {
+    const values = { targets: {}, direct: { ...fixedDirect }, stock: {} };
     const errors = [];
     for (const input of container.querySelectorAll("input[data-item][data-field]")) {
       const value = input.value.trim() === "" ? 0 : Number(input.value);
@@ -109,19 +109,27 @@
     }
   }
 
-  function setPreset(container, stage, core) {
-    setAllInputs(container, 0);
-    const preset = core.getPreset(stage);
-    for (const [field, record] of Object.entries(preset)) {
-      for (const [item, value] of Object.entries(record)) {
-        const input = container.querySelector(`input[data-field="${field}"][data-item="${item}"]`);
-        if (input) input.value = String(value);
-      }
-    }
+  function renderPresetNote(noteNode, direct) {
+    const entries = Object.entries(direct).filter(([, quantity]) => quantity > 0);
+    noteNode.hidden = entries.length === 0;
+    noteNode.textContent = entries.length
+      ? `第10段階で研究に直接使う中間生成物も自動加算しています: ${entries.map(([item, quantity]) => `${item} ${numberFormat.format(quantity)}個`).join("、")}`
+      : "";
   }
 
-  function renderResults(container, resultNode, core) {
-    const { values, errors } = readInputs(container);
+  function setPreset(container, stage, core, state, noteNode) {
+    setAllInputs(container, 0);
+    const preset = core.getPreset(stage);
+    state.direct = { ...preset.direct };
+    for (const [item, value] of Object.entries(preset.targets)) {
+      const input = container.querySelector(`input[data-field="targets"][data-item="${item}"]`);
+      if (input) input.value = String(value);
+    }
+    renderPresetNote(noteNode, state.direct);
+  }
+
+  function renderResults(container, resultNode, core, state) {
+    const { values, errors } = readInputs(container, state.direct);
     resultNode.replaceChildren();
     if (errors.length) {
       const list = element("ul", "research-calculator__errors");
@@ -159,7 +167,7 @@
         resultTable(["アイテム", "必要総数", "所持から使用", "クラフト", "使用後の残数"], craftRows),
       );
     } else {
-      resultNode.append(element("p", "", "目標または直接必要数を入力してください。"));
+      resultNode.append(element("p", "", "目標数を入力してください。"));
     }
 
     const rawRows = core.RAW_ITEMS.map((item) => {
@@ -190,6 +198,7 @@
     if (container.dataset.initialized === "true") return;
     container.dataset.initialized = "true";
     const stage = Number(container.dataset.stage);
+    const state = { direct: {} };
     container.replaceChildren();
 
     container.append(
@@ -213,6 +222,9 @@
     clear.dataset.action = "clear";
     controls.append(clear);
     container.append(controls);
+    const presetNote = element("p", "research-calculator__preset-note");
+    presetNote.hidden = true;
+    container.append(presetNote);
 
     container.append(
       inputSection(
@@ -228,11 +240,8 @@
     container.append(
       inputSection(
         "中間生成物",
-        "研究で直接使う数と所持数を入力します。上位アイテムの材料として必要な数は自動で加算されます。",
-        inputTable(stage, core.INTERMEDIATE_ITEMS, [
-          { field: "direct", label: "直接必要数" },
-          { field: "stock", label: "所持数" },
-        ]),
+        "現在の所持数を入力します。上位アイテムから必要数を自動計算し、所持分を差し引きます。",
+        inputTable(stage, core.INTERMEDIATE_ITEMS, [{ field: "stock", label: "所持数" }]),
         false,
       ),
     );
@@ -249,17 +258,23 @@
     resultNode.setAttribute("aria-live", "polite");
     container.append(resultNode);
 
-    container.addEventListener("input", () => renderResults(container, resultNode, core));
+    container.addEventListener("input", () => renderResults(container, resultNode, core, state));
     container.addEventListener("click", (event) => {
       const button = event.target.closest("button");
       if (!button) return;
-      if (button.dataset.preset) setPreset(container, Number(button.dataset.preset), core);
-      if (button.dataset.action === "clear") setAllInputs(container, 0);
-      renderResults(container, resultNode, core);
+      if (button.dataset.preset) {
+        setPreset(container, Number(button.dataset.preset), core, state, presetNote);
+      }
+      if (button.dataset.action === "clear") {
+        setAllInputs(container, 0);
+        state.direct = {};
+        renderPresetNote(presetNote, state.direct);
+      }
+      renderResults(container, resultNode, core, state);
     });
 
-    setPreset(container, stage, core);
-    renderResults(container, resultNode, core);
+    setPreset(container, stage, core, state, presetNote);
+    renderResults(container, resultNode, core, state);
   }
 
   function initializeAll() {

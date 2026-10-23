@@ -190,6 +190,14 @@
   margin-bottom: 1rem;
 }
 
+.md-typeset .research-calculator__preset-note {
+  margin: -0.35rem 0 0.85rem;
+  padding: 0.5rem 0.65rem;
+  border-left: 0.2rem solid var(--md-accent-fg-color);
+  background: color-mix(in srgb, var(--md-accent-fg-color) 10%, transparent);
+  font-size: 0.85em;
+}
+
 .md-typeset .research-calculator__button {
   padding: 0.45rem 0.7rem;
   border: 1px solid var(--md-primary-fg-color);
