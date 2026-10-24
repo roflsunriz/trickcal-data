@@ -22,3 +22,7 @@
 - [生産ラボ 第13段階（予想）](research-stage-13.md)
 - [生産ラボ 第14段階（予想）](research-stage-14.md)
 - [生産ラボ 第15段階（予想）](research-stage-15.md)
+
+## 関連サイト
+
+- [周回計画・クレヨンボード・食べ物の好みを使えるツール集](https://roflsunriz.github.io/trickcal-tools-clone/)

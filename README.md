@@ -6,6 +6,8 @@
 
 https://roflsunriz.github.io/trickcal-data/
 
+関連する周回計画・クレヨンボード・食べ物の好みは、[トリッカルツール集](https://roflsunriz.github.io/trickcal-tools-clone/)で利用できます。
+
 ## 内容
 
 - `docs/` に各カテゴリの台詞データを配置しています。

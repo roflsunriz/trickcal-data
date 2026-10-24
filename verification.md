@@ -6,6 +6,14 @@
 
 2026-09-27 のローカル検証では Zensical 0.0.65 の strict ビルドが成功し、Markdown 16 ページに対応する HTML 16 ページと 404 ページを生成した。既存のテンプレート上書きにトップページの更新日が表示されることを確認した。Pages 実配信は未検証。
 
+相互リンクを変更した場合は、ビルド後のホームと代表的な下層ページでグローバルナビゲーションの「ツール集」が `https://roflsunriz.github.io/trickcal-tools-clone/` を開くこと、ホーム本文にも同じリンクが表示されることをデスクトップとモバイルで確認する。公開後はツール集の共通フッターから本サイトへ戻れることも確認する。
+
+## 2026-10-24: トリッカルツール集との相互リンク
+
+- Zensical strictビルド後、ホーム本文とホーム・生産ラボ第10段階のグローバルナビゲーションに、`https://roflsunriz.github.io/trickcal-tools-clone/` へのリンクが生成されることを確認した。
+- 実ブラウザのデスクトップ表示と390×844で「ツール集」への導線を確認した。390px幅では文書幅とスクロール幅が一致し、リンク先の公開URLはHTTP 200を返した。
+- `python -m compileall -q scripts` と `python scripts/build-docs.py` に成功した。
+
 ## Dependabot 自動処理（2026-09-23）
 
 `.github/workflows/dependabot-automation.yml` を actionlint で検査し、PR 用 workflow 名（CI）と一致することを確認する。Dependabot の patch／minor かつ全 PR チェック成功の場合だけ取り込み、major・古い SHA・再失敗は残す。
