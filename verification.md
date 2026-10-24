@@ -13,6 +13,7 @@
 - Zensical strictビルド後、ホーム本文とホーム・生産ラボ第10段階のグローバルナビゲーションに、`https://roflsunriz.github.io/trickcal-tools-clone/` へのリンクが生成されることを確認した。
 - 実ブラウザのデスクトップ表示と390×844で「ツール集」への導線を確認した。390px幅では文書幅とスクロール幅が一致し、リンク先の公開URLはHTTP 200を返した。
 - `python -m compileall -q scripts` と `python scripts/build-docs.py` に成功した。
+- push前監査でZensical 0.0.72を利用可能な最新版として確認し、更新後のstrictビルドと依存脆弱性0件を再確認した。
 
 ## Dependabot 自動処理（2026-09-23）
 
